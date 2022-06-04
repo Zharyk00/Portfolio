@@ -1,0 +1,33 @@
+.main-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 400px;
+}
+
+.main-page .greet {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 50px;
+}
+
+.main-page .greet div {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.main-page .greet div .letters {
+  color: aqua;
+  font-size: 50px;
+}
+
+.main-page .greet .hi {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+/*# sourceMappingURL=HomePage.css.map */
