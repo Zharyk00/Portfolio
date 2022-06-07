@@ -1,18 +1,11 @@
 body {
-  /* background-image: url("C:\Users\Kiwi\Desktop\React\project\src\Components\Nav\pKCuAG.png");
+  /* background-image: url("C:\Users\Zharyk\Desktop\Portfolio\src\Components\Nav\pKCuAG.png"); */
+  background-color: black;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-attachment: fixed;
   background-position: center;
-  height: 620px; */
+  background-size: 100% 100%;
+  background-color: black;
+  height: 620px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

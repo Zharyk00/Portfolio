@@ -25,4 +25,12 @@
 .main-nav .links a.active {
   color: #00BDE7;
 }
+
+.main-nav .avatar {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 80px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
 /*# sourceMappingURL=NavStyle.css.map */
