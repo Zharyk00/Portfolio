@@ -1,8 +1,0 @@
-<motion.svg width="58" height="79" viewBox="0 0 58 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-<motion.path initial={{ opacity: 0, pathLength: 0 }}
-              animate={{
-                opacity: 1,
-                pathLength: 1,
-                transition: { duration: 2, delay: 1 },
-              }} d="M5.99865 18C5.99865 34.3871 3.26014 51.8132 11.4905 66.5C13.1133 69.3957 15.2053 77 19.5602 77C23.6653 77 28.8164 75.1504 32.2251 73C39.3804 68.486 49.4586 63.9554 53.1839 55.7778C56.7987 47.8426 56.6195 34.8154 54.4168 26.4444C51.2442 14.3878 32.1737 2 20.0085 2C11.0187 2 8.57417 2.05852 4.98994 11.2222C1.28825 20.6863 1.54683 30.1063 2.97252 40" stroke="black" stroke-width="3" stroke-linecap="round"/>
-</motion.svg>
