@@ -1,7 +1,6 @@
 import React from "react";
+import { userContext } from "../../App";
 
-function about() {
-  return <div>about</div>;
-}
+function about() {}
 
 export default about;

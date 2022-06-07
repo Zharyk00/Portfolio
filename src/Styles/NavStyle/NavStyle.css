@@ -5,7 +5,6 @@
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 100px;
       grid-template-rows: 100px;
-  background-color: #252525;
 }
 
 .main-nav .links {
@@ -24,6 +23,6 @@
 }
 
 .main-nav .links a.active {
-  color: #00dcff;
+  color: #00BDE7;
 }
 /*# sourceMappingURL=NavStyle.css.map */

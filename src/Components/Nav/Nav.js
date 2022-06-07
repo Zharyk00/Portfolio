@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import Avatar from "@mui/material/Avatar";
 import { green } from "@mui/material/colors";
 import { NavLink } from "react-router-dom";
 import "../../Styles/NavStyle/NavStyle.css";
 import { motion } from "framer-motion";
 import { linkMovements } from "../../Animations/Animation";
+import { userContext } from "../../App";
 
-function nav() {
+function Nav() {
+  const { posts, setPosts } = useContext(userContext);
   const { hidden1, visible1 } = linkMovements;
+  const info = useRef();
 
   return (
     <motion.div className="main-nav">
-      <Avatar sx={{ bgcolor: green[500] }} variant="rounded">
-        WB
-      </Avatar>
+      <Avatar alt="Remy Sharp" />
 
       <motion.div variants={linkMovements} className="links">
         <motion.div
@@ -23,7 +24,6 @@ function nav() {
             scale: 1.2,
             y: -5,
           }}
-          onClick={(e) => e.preventDefault()}
         >
           <NavLink to="/">Home</NavLink>
         </motion.div>
@@ -96,4 +96,4 @@ function nav() {
   );
 }
 
-export default nav;
+export default Nav;
