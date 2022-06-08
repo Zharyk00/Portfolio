@@ -1,9 +1,11 @@
 .main-page {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  height: 400px;
+  -ms-grid-columns: 2fr 1fr, (1fr)[4];
+      grid-template-columns: 2fr 1fr, repeat(4, 1fr);
+  -ms-grid-rows: 600px auto;
+      grid-template-rows: 600px auto;
+  gap: 200px;
 }
 
 .main-page .greet {
@@ -11,15 +13,20 @@
   display: grid;
   -ms-grid-rows: (70px)[3];
       grid-template-rows: repeat(3, 70px);
-  margin-left: 50px;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-left: 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   grid-gap: 40px;
 }
 
 .main-page .greet h1 {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-auto-flow: row;
   font-size: 120px;
   margin: 0;
   padding: 0;

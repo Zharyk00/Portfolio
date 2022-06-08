@@ -23,11 +23,12 @@ function App() {
         <Nav />
       </userContext.Provider>
       <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="hello" element={<SayHello />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="project" element={<Projects />} />
+        <Route path="/" element={<Home />}>
+          <Route path="#aboutHash" element={<About />} />
+          <Route path="hello" element={<SayHello />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="project" element={<Projects />} />
+        </Route>
       </Routes>
     </div>
   );

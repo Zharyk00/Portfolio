@@ -1,7 +1,13 @@
 .main-nav
     display: grid
+    background: rgba(255,255 ,255 ,0.1 )
+    border-bottom: 1px solid white
+    width: 100%
+    position: fixed
     grid-template-columns: 1fr 1fr
-    grid-template-rows: 100px
+    grid-template-rows: 70px
+    backdrop-filter: blur(3px)
+
     .links
         display: grid
         justify-content: space-around
@@ -11,8 +17,7 @@
         a
             text-decoration: none
             color: #fdfdfd
-        a.active
-            color: #00BDE7
+
     .avatar
         display: grid
         margin-left: 80px

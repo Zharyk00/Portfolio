@@ -1,10 +1,16 @@
 .main-nav {
   display: -ms-grid;
   display: grid;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid white;
+  width: 100%;
+  position: fixed;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 100px;
-      grid-template-rows: 100px;
+  -ms-grid-rows: 70px;
+      grid-template-rows: 70px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .main-nav .links {
@@ -20,10 +26,6 @@
 .main-nav .links a {
   text-decoration: none;
   color: #fdfdfd;
-}
-
-.main-nav .links a.active {
-  color: #00BDE7;
 }
 
 .main-nav .avatar {

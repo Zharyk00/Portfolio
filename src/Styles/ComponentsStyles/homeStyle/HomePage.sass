@@ -1,16 +1,20 @@
 .main-page
     display: grid
-    grid-template-columns: 1fr 1fr
-    height: 400px
+    grid-template-columns: 2fr 1fr , repeat(4 , 1fr)
+    grid-template-rows: 600px auto
+    gap: 200px
+
     .greet
         display: grid
         grid-template-rows: repeat(3 , 70px)
-        margin-left: 50px
         align-content: center
+        margin-left: 100px
+        align-items: end
         grid-gap: 40px
 
         h1
-            display: grid
+            display: flex
+            grid-auto-flow: row
             font-size: 120px
             margin: 0
             padding: 0
