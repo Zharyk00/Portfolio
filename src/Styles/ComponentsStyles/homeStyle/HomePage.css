@@ -1,11 +1,11 @@
 .main-page {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr, (1fr)[4];
-      grid-template-columns: 2fr 1fr, repeat(4, 1fr);
-  -ms-grid-rows: 600px auto;
-      grid-template-rows: 600px auto;
-  gap: 200px;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 700px auto;
+      grid-template-rows: 700px auto;
+  grid-auto-flow: row;
 }
 
 .main-page .greet {

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { motion } from "framer-motion";
+import { userContext } from "../../App";
 
 function SayHello() {
+  const { setTitle } = useContext(userContext);
   return (
-    <div id="sayHash">
-      <h1>say hello</h1>
+    <motion.div id="sayHash" onViewportEnter={() => setTitle("SayHello")}>
       The most random word in English is aardvark. Of course, there's really no
       way to answer this question because its entirely based on opinion.The most
       random word in English is aardvark. Of course, there's really no way to
@@ -78,7 +80,7 @@ function SayHello() {
       question because its entirely based on opinion.The most random word in
       English is aardvark. Of course, there's really no way to answer this
       question because its entirely based on opinion.
-    </div>
+    </motion.div>
   );
 }
 

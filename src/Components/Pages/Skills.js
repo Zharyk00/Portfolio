@@ -1,134 +1,147 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
 import "../../Styles/ComponentsStyles/skillsStyle/skills.css";
-import LinearProgress from "@mui/material/LinearProgress";
-import { flexbox } from "@mui/system";
+import { userContext } from "../../App";
 
 function Skills() {
+  const { title, setTitle } = useContext(userContext);
+  const [rate, setRate] = useState(0);
   const [progress, setProgress] = useState([
-    { id: 1, languge: "Html", percent: "80%", color: "#D84924" },
-    { id: 2, languge: "Css", percent: "75%", color: "#0271B3" },
-    { id: "subCss", languge: "Sass", percent: "95%", color: "#C36192" },
-    { id: "subCss", languge: "FlexBox", percent: "95%", color: "#2449D8" },
-    { id: "subCss", languge: "CssGrid", percent: "98%", color: "#3460A6" },
-    { id: "subCss", languge: "Animation", percent: "90%", color: "#DC5B5D" },
-    { id: 3, languge: "JavaScript", percent: "60%", color: "#D99924" },
-    { id: 4, languge: "React", percent: "70%", color: "#5CCFEE" },
     {
-      id: "subReact",
-      languge: "React-router-dom@6",
+      id: 0.1,
+      initial: 3,
+      languge: "Html",
       percent: "80%",
+      rate: 80,
+      color: "#D84924",
+    },
+    {
+      id: 0.2,
+      initial: 3,
+      languge: "Css",
+      percent: "75%",
+      rate: 75,
+      color: "#0271B3",
+    },
+    {
+      id: 0.3,
+      initial: 3,
+      subC: "subCss",
+      languge: "Sass",
+      percent: "95%",
+      rate: 95,
+      color: "#C36192",
+    },
+    {
+      id: 0.4,
+      initial: 3,
+      subC: "subCss",
+      languge: "FlexBox",
+      percent: "95%",
+      rate: 95,
+      color: "#2449D8",
+    },
+    {
+      id: 0.5,
+      initial: 3,
+      subC: "subCss",
+      languge: "CssGrid",
+      percent: "98%",
+      rate: 98,
+      color: "#3460A6",
+    },
+    {
+      id: 0.6,
+      initial: 3,
+      subC: "subCss",
+      languge: "Animation",
+      percent: "90%",
+      rate: 90,
+      color: "#DC5B5D",
+    },
+    {
+      id: 0.7,
+      initial: 3,
+      languge: "JavaScript",
+      percent: "60%",
+      rate: 60,
+      color: "#D99924",
+    },
+    {
+      id: 0.8,
+      initial: 3,
+      languge: "React",
+      percent: "70%",
+      rate: 70,
+      color: "#5CCFEE",
+    },
+    {
+      id: 0.9,
+      initial: 3,
+      subR: "subReact",
+      languge: "ReactRouterDom@6",
+      percent: "80%",
+      rate: 80,
       color: "#80BB44",
     },
     {
-      id: "subReact",
-      languge: "Framer-motion",
+      id: 1,
+      initial: 3,
+      subR: "subReact",
+      languge: "FramerMotion",
       percent: "70%",
+      rate: 70,
       color: "#DD22CC",
     },
-    { id: 5, languge: "Material-Ui", percent: "75%", color: "#007FFF" },
-    { id: 6, languge: "Git", percent: "70%", color: "#841184" },
+    {
+      id: 1.1,
+      initial: 3,
+      languge: "MaterialUi",
+      percent: "75%",
+      rate: 75,
+      color: "#007FFF",
+    },
+    {
+      id: 1.01,
+      initial: 3,
+      languge: "Git",
+      percent: "70%",
+      rate: 70,
+      color: "#841184",
+    },
   ]);
-  console.log(progress);
 
   return (
-    <div id="skillsHash">
+    <motion.div onViewportEnter={() => setTitle("Skills")} id="skillsHash">
       <motion.div
+        className="progress"
         style={{
           width: "500px",
-          height: 3,
-          background: "grey",
+          height: "600px",
           borderRadius: 10,
         }}
       >
-        <motion.div
-          initial={{ width: 0 }}
-          style={{ color: "red", height: 3, borderRadius: 10 }}
-          whileInView={{
-            width: "50%",
-            background: "red",
-            transition: { type: "tween", duration: 2, ease: "easeOut" },
-          }}
-        ></motion.div>
+        {progress.map((item) => (
+          <div key={item.id}>
+            {item.languge}
+            <motion.div
+              initial={{ width: item.initial }}
+              style={{ height: 3, borderRadius: 10 }}
+              whileInView={{
+                width: item.percent,
+                backgroundColor: item.color,
+                transition: {
+                  type: "tween",
+                  duration: 2,
+                  ease: "easeOut",
+                  delay: item.id,
+                },
+              }}
+            ></motion.div>
+          </div>
+        ))}
       </motion.div>
-      <motion.h1>skill</motion.h1>
-      The most random word in English is aardvark. Of course, there's really no
-      way to answer this question because its entirely based on opinion. That
-      being said, feel free to contact us if you think you know a more random
-      word than aardvark.The most random word in English is aardvark. Of course,
-      there's really no way to answer this question because its entirely based
-      on opinion. That being said, feel free to contact us if you think you know
-      a more random word than aardvark.The most random word in English is
-      aardvark. Of course, there's really no way to answer this question because
-      its entirely based on opinion. That being said, feel free to contact us if
-      you think you know a more random word than aardvark.The most random word
-      in English is aardvark. Of course, there's really no way to answer this to
-      contact us if you think you know a more random word than aardvark.The
-      question because its entirely based on opinion. That being said, feel free
-      most random word in English is aardvark. Of course, there's really no way
-      to answer this question because its entirely based on opinion. That being
-      said, feel free to contact us if you think you know a more random word
-      than aardvark.The most random word in English is aardvark. Of course,
-      there's really no way to answer this question because its entirely based
-      on opinion. That being said, feel free to contact us if you think you know
-      a more random word than aardvark.The most random word in English is
-      aardvark. Of course, there's really no way to answer this question because
-      its entirely based on opinion. That being said, feel free to contact us if
-      you think you know a more random word than aardvark.The most random word
-      in English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion. That being said, feel free
-      to contact us if you think you know a more random word than aardvark.The
-      most random word in English is aardvark. Of course, there's really no way
-      to answer this question because its entirely based on opinion. That being
-      said, feel free to contact us if you think you know a more random word
-      than aardvark.The most random word in English is aardvark. Of course,
-      there's really no way to answer this question because its entirely based
-      on opinion. That being said, feel free to contact us if you think you know
-      a more random word than aardvark.The most random word in English is
-      aardvark. Of course, there's really no way to answer this question because
-      its entirely based on opinion. That being said, feel free to contact us if
-      you think you know a more random word than aardvark. The most random word
-      in English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.The most random word in
-      English is aardvark. Of course, there's really no way to answer this
-      question because its entirely based on opinion.
-    </div>
+    </motion.div>
   );
 }
 
