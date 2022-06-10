@@ -1,16 +1,18 @@
 .main-page
     display: grid
     grid-template-columns: 2fr 1fr
-    grid-template-rows: 700px auto
     grid-auto-flow: row
+    
 
     .greet
         display: grid
+        backdrop-filter: blur(13px)
         grid-template-rows: repeat(3 , 70px)
         align-content: center
-        margin-left: 100px
+        padding-left: 100px
         align-items: end
         grid-gap: 40px
+        padding-top: 150px
 
         h1
             display: flex
@@ -18,3 +20,9 @@
             font-size: 120px
             margin: 0
             padding: 0
+    .me
+        display: grid
+        padding-top: 150px
+        align-content: center
+        justify-content: center
+        backdrop-filter: blur(6px)

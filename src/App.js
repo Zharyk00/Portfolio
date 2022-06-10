@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Nav from "./Components/Nav/Nav";
+import "../src/Styles/App/App.css";
+import Nav from "./Components/Pages/Nav";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Skills from "./Components/Pages/Skills";
@@ -21,13 +21,6 @@ function App() {
         <Projects />
         <SayHello />
       </userContext.Provider>
-      <Routes>
-        <Route path="home" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="hello" element={<SayHello />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="project" element={<Projects />} />
-      </Routes>
     </motion.div>
   );
 }

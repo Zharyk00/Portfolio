@@ -3,23 +3,24 @@
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 700px auto;
-      grid-template-rows: 700px auto;
   grid-auto-flow: row;
 }
 
 .main-page .greet {
   display: -ms-grid;
   display: grid;
+  -webkit-backdrop-filter: blur(13px);
+          backdrop-filter: blur(13px);
   -ms-grid-rows: (70px)[3];
       grid-template-rows: repeat(3, 70px);
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-left: 100px;
+  padding-left: 100px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
   grid-gap: 40px;
+  padding-top: 150px;
 }
 
 .main-page .greet h1 {
@@ -30,5 +31,18 @@
   font-size: 120px;
   margin: 0;
   padding: 0;
+}
+
+.main-page .me {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 150px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
 }
 /*# sourceMappingURL=HomePage.css.map */
