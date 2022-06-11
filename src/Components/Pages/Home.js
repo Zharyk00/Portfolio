@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
 import { userContext } from "../../App";
-import "../../Styles/ComponentsStyles/homeStyle/HomePage.css";
+import "../../Styles/Home/Home.css";
 
 function Home() {
   const { title, setTitle } = useContext(userContext);
@@ -27,7 +27,7 @@ function Home() {
         </motion.h1>
         <motion.h1
           style={{ color: "white" }}
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{opacity: 1,y: 0, transition: { duration: 0.6, delay: 1 },}}
           whileHover={{x: 50, transition: { type: "spring", stiffness: 200 }, }}
           onHoverStart={() => setWho("Web")}
