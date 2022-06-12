@@ -6,71 +6,9 @@ function About() {
   const { title, setTitle } = useContext(userContext);
   return (
     <motion.div id="about" onViewportEnter={() => setTitle("About")}>
-      About. The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion. jdfgoerygbhdzeiyaAbout. The most random word in English is
-      aardvark. Of course, there's really no way to answer this question because
-      its entirely based on opinion.The most random word in English is aardvark.
-      Of course, there's really no way to answer this question because its
-      entirely based on opinion.The most random word in English is aardvark. Of
-      course, there's really no way to answer this question because its entirely
-      based on opinion.The most random word in English is aardvark. Of course,
-      there's really no way to answer this question because its entirely based
-      on opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion.The most random word in English is aardvark. Of course, there's
-      really no way to answer this question because its entirely based on
-      opinion. jdfgoerygbhdzeiya
+     <p>
+      <code>const ={}</code>
+     </p>
     </motion.div>
   );
 }

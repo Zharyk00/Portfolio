@@ -1,7 +1,7 @@
 .main-page {
   display: -ms-grid;
   display: grid;
-  background-image: url("../../Pictures/first.jpg");
+  background-image: url("../../Pictures/code14.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -13,15 +13,18 @@
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 625px;
       grid-template-rows: 625px;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .main-page .div .greet {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  justify-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 100px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
