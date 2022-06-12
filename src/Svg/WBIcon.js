@@ -1,17 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function WBIcon(props) {
-  console.log(props);
+function WBIcon() {
   return (
     <>
-      {" "}
-      <motion.div className="avatar">
+      <motion.div className="me">
         <motion.svg
           drag
           dragConstraints={{ left: 0, right: 300 }}
-          width="80"
-          height="50"
           viewBox="0 0 488 300"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

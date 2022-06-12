@@ -7,7 +7,7 @@ function Skills() {
   const { title, setTitle } = useContext(userContext);
   
   return (
-    <motion.div onViewportEnter={() => setTitle("Skills")} id="skills">
+    <motion.div className="main-skills" onViewportEnter={() => setTitle("Skills")} id="skills">
       <motion.div
         className="progress"
         style={{ width: "100%",height: "600px",borderRadius: 10}}>

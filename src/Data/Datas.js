@@ -1,9 +1,8 @@
 export const menu = [
-    { id: 1, path: "home", links: "Home", delay: 1.4 },
+    { id: 1, path: "home", links: "Hello", delay: 1.4 },
     { id: 2, path: "about", links: "About", delay: 1.2 },
     { id: 3, path: "skills", links: "Skills", delay: 1 },
     { id: 4, path: "projects", links: "Projects", delay: 0.8 },
-    { id: 5, path: "sayHello", links: "SayHello", delay: 0.6 },
   ];
 
 export const progress=[

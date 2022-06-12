@@ -1,27 +1,39 @@
 .main-page
     display: grid
-    grid-template-columns: 2fr 1fr
-    grid-auto-flow: row
-    
-    .greet
-        display: grid
-        backdrop-filter: blur(13px)
-        grid-template-rows: repeat(3 , 70px)
-        align-content: center
-        padding-left: 100px
-        align-items: end
-        grid-gap: 40px
-        padding-top: 150px
+    background-image: url("../../Pictures/first.jpg")
+    background-repeat: no-repeat
+    background-size: 100% 100%
 
-        h1
-            display: flex
-            grid-auto-flow: row
-            font-size: 120px
-            margin: 0
-            padding: 0
-    .me
+    .div
         display: grid
-        padding-top: 150px
-        align-content: center
-        justify-content: center
-        backdrop-filter: blur(6px)
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 625px
+        backdrop-filter: blur(4px)
+        
+       
+        .greet
+            display: grid
+            grid-auto-flow: row
+            justify-items: center
+            align-content: center
+            
+             
+        
+        
+
+            h1
+                display: grid
+                font-size: 120px
+            
+            
+                @media (max-width: 480px) 
+                    font-size: 50px
+        .me
+            display: grid
+            justify-content: center
+            align-content: center
+            
+           
+            svg
+                height: 300px
+                width: 300px

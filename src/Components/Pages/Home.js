@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { motion } from "framer-motion";
 import { userContext } from "../../App";
 import "../../Styles/Home/Home.css";
+import WBIcon from "../../Svg/WBIcon";
 
 function Home() {
   const { title, setTitle } = useContext(userContext);
@@ -12,9 +13,10 @@ function Home() {
   return (
     <motion.div
       className="main-page"
-      onViewportEnter={() => setTitle("Home")}
+      onViewportEnter={() => setTitle("Hello")}
       id="home"
     >
+      <div className="div">
       <motion.div className="greet">
         <motion.h1
           style={{ color: "red" }}
@@ -44,29 +46,8 @@ function Home() {
           {name}
         </motion.h1>
       </motion.div>
-      <motion.div className="me">
-        About. The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most random word in English is aardvark. Of course, there's
-        really no way to answer this question because its entirely based on
-        opinion.The most rand
-      </motion.div>
+      
+     </div>
     </motion.div>
   );
 }
