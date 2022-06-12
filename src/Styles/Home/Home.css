@@ -1,0 +1,58 @@
+.main-page {
+  display: -ms-grid;
+  display: grid;
+  background-image: url("../../Pictures/code14.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-page .div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 625px;
+      grid-template-rows: 625px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.main-page .div .greet {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 100px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main-page .div .greet h1 {
+  display: -ms-grid;
+  display: grid;
+  font-size: 120px;
+}
+
+@media (max-width: 480px) {
+  .main-page .div .greet h1 {
+    font-size: 50px;
+  }
+}
+
+.main-page .div .me {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main-page .div .me svg {
+  height: 300px;
+  width: 300px;
+}
+/*# sourceMappingURL=Home.css.map */

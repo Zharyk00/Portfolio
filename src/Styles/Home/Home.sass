@@ -1,0 +1,36 @@
+.main-page
+    display: grid
+    
+    background-image: url("../../Pictures/code14.webp")
+    background-repeat: no-repeat
+    background-size: 100% 100%
+
+    .div
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 625px
+        backdrop-filter: blur(5px)
+       
+        .greet
+            display: grid
+            grid-auto-flow: row
+            justify-content: start
+            padding-left: 100px
+            align-content: center
+            
+            h1
+                display: grid
+                font-size: 120px
+            
+            
+                @media (max-width: 480px) 
+                    font-size: 50px
+        .me
+            display: grid
+            justify-content: center
+            align-content: center
+            
+           
+            svg
+                height: 300px
+                width: 300px

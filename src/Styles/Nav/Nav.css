@@ -1,0 +1,48 @@
+.main-nav {
+  display: -ms-grid;
+  display: grid;
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid white;
+  width: 100%;
+  position: fixed;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 70px;
+      grid-template-rows: 70px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.main-nav .links {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 40px;
+  grid-column-gap: 40px;
+  grid-auto-flow: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main-nav .links div a {
+  font-size: 18px;
+  font-family: 'Overpass', sans-serif;
+}
+
+.main-nav .links div a.active {
+  -webkit-text-decoration: underline 3px red;
+          text-decoration: underline 3px red;
+}
+
+.main-nav .title {
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Overpass', sans-serif;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 40px;
+}
+/*# sourceMappingURL=Nav.css.map */

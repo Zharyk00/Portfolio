@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
-import axios from "axios";
-import Nav from "./Components/Nav/Nav";
+import "../src/Styles/App/App.css";
+import Nav from "./Components/Pages/Nav";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Skills from "./Components/Pages/Skills";
@@ -9,27 +10,18 @@ import SayHello from "./Components/Pages/SayHello";
 import Projects from "./Components/Pages/Projects";
 export const userContext = React.createContext();
 function App() {
-  const [posts, setPosts] = useState("Asan");
-  useEffect(() => {
-    (async function () {
-      const data = await axios("https://jsonplaceholder.typicode.com/posts");
-      // setPosts(data.data);
-      // console.log(data);
-    })();
-  }, []);
+  const [title, setTitle] = useState("Home");
   return (
-    <div className="App">
-      <userContext.Provider value={{ posts, setPosts }}>
+    <motion.div className="App">
+      <userContext.Provider value={{ title, setTitle }}>
         <Nav />
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <SayHello />
       </userContext.Provider>
-      <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="hello" element={<SayHello />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="project" element={<Projects />} />
-      </Routes>
-    </div>
+    </motion.div>
   );
 }
 

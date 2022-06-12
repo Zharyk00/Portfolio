@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useContext} from "react";
 import { userContext } from "../../App";
+import { motion } from "framer-motion";
 
-function about() {}
+function About() {
+  const { title, setTitle } = useContext(userContext);
+  return (
+    <motion.div id="about" onViewportEnter={() => setTitle("About")}>
+     <p>
+      <code>const ={}</code>
+     </p>
+    </motion.div>
+  );
+}
 
-export default about;
+export default About;
