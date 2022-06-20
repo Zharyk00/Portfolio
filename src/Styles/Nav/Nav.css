@@ -1,48 +1,109 @@
 .main-nav {
   display: -ms-grid;
   display: grid;
-  background: rgba(255, 255, 255, 0);
-  border-bottom: 1px solid white;
   width: 100%;
-  position: fixed;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 70px;
-      grid-template-rows: 70px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  z-index: 1;
+  -ms-grid-columns: 20% 70% 5%;
+      grid-template-columns: 20% 70% 5%;
+  -ms-grid-rows: 560px;
+      grid-template-rows: 560px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  background: #e0e5ec;
 }
 
 .main-nav .links {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  padding-right: 40px;
-  grid-column-gap: 40px;
-  grid-auto-flow: column;
+  background: #e0e5ec;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  justify-items: center;
+  grid-auto-flow: row;
+  gap: 30px 0px;
+  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 10px;
 }
 
-.main-nav .links div a {
-  font-size: 18px;
-  font-family: 'Overpass', sans-serif;
+.main-nav .links .effect {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 134px;
+  background-color: #ffffff;
+  top: 48px;
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
 
-.main-nav .links div a.active {
-  -webkit-text-decoration: underline 3px red;
-          text-decoration: underline 3px red;
+.main-nav .links .avatar {
+  background-image: url("../../Pictures/real.jpg");
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 130px;
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 134px;
+  z-index: 1;
 }
 
-.main-nav .title {
+.main-nav .links .name {
   display: -ms-grid;
   display: grid;
-  font-family: 'Overpass', sans-serif;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding-left: 40px;
+  justify-items: center;
+}
+
+.main-nav .links a {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 5%;
+  width: 120px;
+  height: 30px;
+}
+
+.main-nav .links a .icons {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-size: 25px;
+}
+
+.main-nav .links a.active {
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+
+.main-nav .content {
+  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 10px;
+  padding: 5px;
 }
 /*# sourceMappingURL=Nav.css.map */

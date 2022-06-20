@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { userContext } from "../../App";
 
-function Projects() {
-  const { title, setTitle } = useContext(userContext);
+
+function Portfolio() {
+
   return (
-    <motion.div onViewportEnter={() => setTitle("Projects")} id="projects">
+    <motion.div>
       The most random word in English is aardvark. Of course, there's really no
       way to answer this question because its entirely based on opinion.The most
       random word in English is aardvark. Of course, there's really no way to
@@ -54,4 +54,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Portfolio;

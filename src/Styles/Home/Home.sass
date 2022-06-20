@@ -1,36 +1,22 @@
+@import "../../Sass/Variables/Variables"
+@import "../../Sass/Mixins/Mixins"
 .main-page
     display: grid
-    
-    background-image: url("../../Pictures/code14.webp")
-    background-repeat: no-repeat
-    background-size: 100% 100%
+    grid-template-columns: 1fr 1.4fr
+    background-color: $bk
 
-    .div
+    .greet
         display: grid
-        grid-template-columns: 1fr 1fr
-        grid-template-rows: 625px
-        backdrop-filter: blur(5px)
-       
-        .greet
-            display: grid
-            grid-auto-flow: row
-            justify-content: start
-            padding-left: 100px
-            align-content: center
-            
-            h1
-                display: grid
-                font-size: 120px
-            
-            
-                @media (max-width: 480px) 
-                    font-size: 50px
-        .me
+        grid-auto-flow: row
+
+        h1
             display: grid
             justify-content: center
-            align-content: center
-            
-           
-            svg
-                height: 300px
-                width: 300px
+            font-size: 60px
+            height: 70px
+            width: 300px
+            padding: 5px
+            @include shadow($shadow , $transition  , 27px )
+
+            @media (max-width: 480px)
+                font-size: 50px

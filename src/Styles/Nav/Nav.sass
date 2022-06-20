@@ -1,31 +1,61 @@
+@import "../../Sass/Mixins/Mixins"
+@import "../../Sass/Variables/Variables"
+
 .main-nav
     display: grid
-    background: rgba(255, 255, 255, 0)
-    border-bottom: 1px solid white
     width: 100%
-    position: fixed
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: 70px
-    backdrop-filter: blur(3px)
-    z-index: 1
+    grid-template-columns: 20% 70% 5%
+    grid-template-rows: 560px
+    column-gap: 20px
+    background: $bk
 
     .links
         display: grid
-        justify-content: end
-        padding-right: 40px
-        grid-column-gap: 40px
-        grid-auto-flow: column
+        background: $bk
+        justify-content: center
         align-content: center
-       
-        div a 
-            font-size: 18px
-            font-family: 'Overpass', sans-serif
-        div a.active
-            text-decoration: underline 3px red
-            
-            
-    .title
-        display: grid
-        font-family: 'Overpass', sans-serif
-        align-content: center
-        padding-left: 40px
+        justify-items: center
+        grid-auto-flow: row
+        gap: 30px 0px
+        @include shadow($shadow  , $transition , 10px )
+        .effect
+            position: absolute
+            height: 150px
+            width: 150px
+            border-radius: 134px
+            background-color: #ffffff
+            top: 48px
+            box-shadow: $activeshadow
+        .avatar
+            background-image: url('../../Pictures/real.jpg')
+            border-radius: 50%
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            height: 130px
+            width: 130px
+            box-shadow: $activeshadow
+            @include shadow($shadow  , $transition , 134px )
+            z-index: 1
+        .name
+            display: grid
+            justify-items: center
+
+        a
+            display: grid
+            place-content: center
+            @include shadow($shadow  , $transition , 5% )
+            width: 120px
+            height: 30px
+            &:hover
+
+            .icons
+                display: grid
+                place-content: center
+                font-size: 25px
+
+        a.active
+            box-shadow: $activeshadow
+    .content
+        @include shadow($shadow  , $transition , 10px )
+        padding: 5px
