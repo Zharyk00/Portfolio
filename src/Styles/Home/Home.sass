@@ -2,21 +2,84 @@
 @import "../../Sass/Mixins/Mixins"
 .main-page
     display: grid
-    grid-template-columns: 1fr 1.4fr
+    grid-template-columns: 1fr 1fr
     background-color: $bk
-
-    .greet
+    .greet-container
         display: grid
-        grid-auto-flow: row
-
-        h1
+        justify-content: center
+        align-content: center
+        .greet
             display: grid
+            height: 400px
+            width: 400px
+            grid-auto-flow: row
             justify-content: center
-            font-size: 60px
-            height: 70px
-            width: 300px
-            padding: 5px
+            align-content: center
+            gap: 20px 0px
+
+            h1
+                display: grid
+                justify-content: center
+                font-size: 70px
+                height: 70px
+                padding: 5px
             @include shadow($shadow , $transition  , 27px )
 
             @media (max-width: 480px)
                 font-size: 50px
+    .container
+        display: grid
+        justify-content: center
+        align-content: center
+        background: $bk
+
+        .form
+            display: grid
+            height: 400px
+            width: 300px
+            @include shadow($shadow , $transition  , 27px )
+            justify-content: center
+            align-content: center
+            grid-auto-flow: row
+            background: $bk
+            gap: 15px 0px
+            .title
+                text-align: center
+                margin-bottom: 10px
+            .form__inputs
+                display: grid
+                grid-auto-flow: row
+                grid-row-gap: 10px
+                label
+                    color: green
+
+                input
+                    box-shadow: $activeshadow
+                    padding-left: 10px
+                    outline: none
+                    border: none
+                    border-radius: 5px
+                    background-color: $bk
+                    height: 35px
+                    width: 200px
+                textarea
+                    border: none
+                    outline: none
+                    padding-left: 10px
+                    border-radius: 5px
+                    background: $bk
+                    height: 50px
+                    box-shadow: $activeshadow
+                    resize: none
+
+                text
+                    color: #FF4D4F
+                    font-size: 14px
+            .button
+                height: 30px
+                margin-top: 20px
+                width: auto
+                @include shadow($shadow , $transition  , 27px )
+                background: $bk
+                &:active
+                    box-shadow: $activeshadow

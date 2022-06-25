@@ -5,7 +5,7 @@
     display: grid
     width: 100%
     grid-template-columns: 20% 70% 5%
-    grid-template-rows: 560px
+    grid-template-rows: repeat( auto-fill, minmax(560px , 1fr) )
     column-gap: 20px
     background: $bk
 
@@ -16,7 +16,7 @@
         align-content: center
         justify-items: center
         grid-auto-flow: row
-        gap: 30px 0px
+        gap: 36px 0px
         @include shadow($shadow  , $transition , 10px )
         .effect
             position: absolute
@@ -24,7 +24,7 @@
             width: 150px
             border-radius: 134px
             background-color: #ffffff
-            top: 48px
+            top: 58px
             box-shadow: $activeshadow
         .avatar
             background-image: url('../../Pictures/real.jpg')
@@ -39,23 +39,29 @@
             z-index: 1
         .name
             display: grid
+            align-items: center
             justify-items: center
+            height: 45px
+            width: 180px
+            box-shadow: $activeshadow
+            font-family: 'Roboto', sans-serif
 
         a
             display: grid
             place-content: center
-            @include shadow($shadow  , $transition , 5% )
-            width: 120px
+            @include shadow($shadow  , $transition , 27px )
+            width: 180px
             height: 30px
             &:hover
 
             .icons
                 display: grid
                 place-content: center
-                font-size: 25px
+                font-size: 23px
 
         a.active
             box-shadow: $activeshadow
     .content
+        display: grid
         @include shadow($shadow  , $transition , 10px )
-        padding: 5px
+        padding: 10px

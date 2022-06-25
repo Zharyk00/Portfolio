@@ -1,2 +1,58 @@
+@import "../../Sass/Mixins/Mixins"
+@import "../../Sass/Variables/Variables"
+
 .main-skills
-    height: 600px
+
+    display: grid
+    height: 100%
+    grid-row-gap: 10px
+    grid-template-columns: 1fr
+    grid-template-rows: 2fr 1fr
+    .languages
+        display: grid
+        .title
+            margin-left: 35%
+            margin-top: 10px
+            display: grid
+            background: #dde2e9
+            place-content: center
+            font-size: 18px
+            height: 25px
+            width: 180px
+            box-shadow: $activeshadow
+            color:
+        .icons
+            display: grid
+            width: 150px
+            justify-items: center
+
+            align-self: end
+            font-size: 25px
+        .lines
+            display: grid
+            place-self: center
+            height: 15px
+            width: 80%
+            border-radius: 27px
+            box-shadow: $activeshadow
+            .lines__color
+                height: 100%
+
+                border-radius: 27px
+                .lines__icons
+                    font-size: 20px
+
+    .tools
+        display: grid
+        grid-template-columns: repeat(4 , 1fr)
+        justify-items: center
+        align-items: center
+        .tools__items
+            display: grid
+            justify-content: center
+            align-content: center
+            height: 50px
+            width: 150px
+            font-size: 17px
+            font-family: 'Roboto', sans-serif
+            @include shadow($shadow, $transition , 27px )

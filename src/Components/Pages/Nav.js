@@ -25,7 +25,7 @@ function Nav() {
               animate={{ x: 0, opacity: 1, transition: { delay: items.delay, duration: 1.6, type: "spring", stiffness: 50 } }}
             >
               <NavLink to={items.path}>
-                <div className="icons">{items.links}</div>
+                <motion.div className="icons">{items.links}</motion.div>
               </NavLink>
             </motion.div>
           );

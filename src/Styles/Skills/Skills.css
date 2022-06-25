@@ -1,4 +1,92 @@
 .main-skills {
-  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  grid-row-gap: 10px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+}
+
+.main-skills .languages {
+  display: -ms-grid;
+  display: grid;
+}
+
+.main-skills .languages .title {
+  margin-left: 35%;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  background: #dde2e9;
+  place-content: center;
+  font-size: 18px;
+  height: 25px;
+  width: 180px;
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+
+.main-skills .languages .icons {
+  display: -ms-grid;
+  display: grid;
+  width: 150px;
+  justify-items: center;
+  -ms-grid-row-align: end;
+      align-self: end;
+  font-size: 25px;
+}
+
+.main-skills .languages .lines {
+  display: -ms-grid;
+  display: grid;
+  place-self: center;
+  height: 15px;
+  width: 80%;
+  border-radius: 27px;
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+
+.main-skills .languages .lines .lines__color {
+  height: 100%;
+  border-radius: 27px;
+}
+
+.main-skills .languages .lines .lines__color .lines__icons {
+  font-size: 20px;
+}
+
+.main-skills .tools {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-skills .tools .tools__items {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 50px;
+  width: 150px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 27px;
 }
 /*# sourceMappingURL=Skills.css.map */
