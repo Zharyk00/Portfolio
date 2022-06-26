@@ -6,22 +6,25 @@
     grid-template-rows: 2fr 1fr
     justify-items: center
     align-items: center
-    grid-gap: 1px 80px
+    grid-gap: 1px 60px
 
     .text
         display: grid
+        color: white
         width: 80%
         font-family: 'Charis SIL', serif
         font-size: 24px
         letter-spacing: 3px
-        line-height: 50px
         gap: 40px
         .me
             text-align: center
+            color: #4f7afe
+            font-size: 25px
     .social-media
         display: grid
         grid-auto-flow: column
         justify-content: space-around
+        align-content: center
         height: 70px
         width: 60%
         box-shadow: $activeshadow
@@ -30,6 +33,8 @@
             display: grid
             font-size: 30px
             place-content: center
+            background: $bk
+            height: 50px
 
             a
                 display: grid

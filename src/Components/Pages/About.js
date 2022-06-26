@@ -11,7 +11,7 @@ function About() {
   return (
     <motion.div className="main-about">
       <motion.div className="text">
-        <motion.div className="me">Who <span style={{ color: 'red' }}>am I</span> ?</motion.div>
+        <motion.div className="me">Who am I?</motion.div>
         I'm a Web Developer from Kyrgyzstan.
         I use my passion and skills to create amazing
         and digital products by using  various tools and animations.

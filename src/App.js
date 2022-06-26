@@ -14,7 +14,8 @@ function App() {
     <motion.div className="App">
       <Routes>
         <Route path="/" element={<Nav />}>
-          <Route index path="/home" element={<Home />}></Route>
+          <Route index element={<Home />} />
+          <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/portfolio" element={<Portfolio />}></Route>

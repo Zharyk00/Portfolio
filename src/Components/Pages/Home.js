@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import { Button } from '@mui/material'
 import { motion } from "framer-motion";
 import { Formik, Form, Field, ErrorMessage, useFormik } from "formik"
+import { BsFillPersonFill } from "react-icons/bs"
+import { SiGmail, SiGooglemessages } from "react-icons/si"
 import "../../Styles/Home/Home.css";
 import * as Yup from 'yup'
 function Home() {
@@ -12,7 +14,7 @@ function Home() {
   const [name, setName] = useState("Zharyk");
 
   const initialValues = { name: '', gmail: '', massage: '' }
-  const onSubmit = async e => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     try {
       const sentForm = await emailjs.sendForm('service_1akujeo', 'template_egho8is', form.current, 'MmbEmr0wzQvDHu2CG')
@@ -38,9 +40,7 @@ function Home() {
         <motion.div className="greet">
           <motion.h1
             className="first"
-            style={{ color: "red" }}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.5 }, }}
+            style={{ color: "#4f7afe" }}
             whileHover={{ x: 20, transition: { type: "spring", stiffness: 200 }, }}
             onHoverStart={() => setGreet("World")}
             onHoverEnd={() => setGreet("Hello")}>
@@ -49,8 +49,6 @@ function Home() {
           <motion.h1
             className="first"
             style={{ color: "white" }}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 0.6, delay: 1 }, }}
             whileHover={{ x: 20, transition: { type: "spring", stiffness: 200 }, }}
             onHoverStart={() => setWho("Web")}
             onHoverEnd={() => setWho("I am")}>
@@ -59,8 +57,6 @@ function Home() {
           <motion.h1
             className="first"
             style={{ color: "white" }}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 0.6, delay: 1.4 }, }}
             whileHover={{ x: 20, transition: { type: "spring", stiffness: 200 }, }}
             onHoverStart={() => setName("Developer")}
             onHoverEnd={() => setName("Zharyk")} >
@@ -71,27 +67,29 @@ function Home() {
 
       <Formik
         initialValues={initialValues}
-        validationSchema={ValidatioSchema}>
-        {formik => (
+        validationSchema={ValidatioSchema}
+      >
+
+        {(formik) => (
           <div className="container">
             <Form ref={form} onSubmit={onSubmit} className="form" >
               <h3 className="title">Say Hello</h3>
               <div className="form__inputs">
-                <label htmlFor="name"> Name</label>
+                <label htmlFor="name"> {<BsFillPersonFill />}</label>
                 <Field name="name" id="name" placeholder="name" />
-                <ErrorMessage name="name" component="text" />
               </div>
+              <ErrorMessage name="name" component="p" />
               <div className="form__inputs">
-                <label htmlFor="gmail">Gmail</label>
+                <label htmlFor="gmail">{<SiGmail />}</label>
                 <Field id="gmail" name="gmail" placeholder="gmail" />
-                <ErrorMessage name="gmail" component="text" />
               </div>
+              <ErrorMessage name="gmail" component="p" />
               <div className="form__inputs">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">{<SiGooglemessages />}</label>
                 <Field as="textarea" name="message" id="message" placeholder="message" />
-                <ErrorMessage name="message" component="text" />
               </div>
-              <Button type="submit" disableRipple disabled={!(formik.isValid && formik.dirty)} className="button">submit</Button>
+              <ErrorMessage name="message" component="p" />
+              <Button type="submit" disableRipple disabled={!(formik.isValid && formik.dirty)} className="button">Send</Button>
             </Form>
           </div>
 

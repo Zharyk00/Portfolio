@@ -8,13 +8,13 @@
       grid-template-rows: repeat(auto-fill, minmax(560px, 1fr));
   -webkit-column-gap: 20px;
           column-gap: 20px;
-  background: #e0e5ec;
+  background: #1C1C1E;
 }
 
 .main-nav .links {
   display: -ms-grid;
   display: grid;
-  background: #e0e5ec;
+  background: #1C1C1E;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -23,8 +23,8 @@
   justify-items: center;
   grid-auto-flow: row;
   gap: 36px 0px;
-  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
-          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+          box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
   -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
@@ -37,10 +37,10 @@
   height: 150px;
   width: 150px;
   border-radius: 134px;
-  background-color: #ffffff;
+  background-color: #1C1C1E;
   top: 58px;
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+          box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
 }
 
 .main-nav .links .avatar {
@@ -51,10 +51,10 @@
   background-repeat: no-repeat;
   height: 130px;
   width: 130px;
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
-          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+          box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+  -webkit-box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+          box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
   -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
@@ -72,17 +72,19 @@
   justify-items: center;
   height: 45px;
   width: 180px;
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  background: #1C1C1E;
+  -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+          box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
   font-family: 'Roboto', sans-serif;
+  color: #ffffff;
 }
 
 .main-nav .links a {
   display: -ms-grid;
   display: grid;
   place-content: center;
-  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
-          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+          box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
   -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
@@ -97,23 +99,25 @@
   display: grid;
   place-content: center;
   font-size: 23px;
+  color: #4f7afe;
 }
 
 .main-nav .links a.active {
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+          box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+  background: #1C1C1E;
 }
 
 .main-nav .content {
   display: -ms-grid;
   display: grid;
-  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
-          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  -webkit-box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+          box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
   -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   border-radius: 10px;
-  padding: 10px;
+  padding: 30px;
 }
 /*# sourceMappingURL=Nav.css.map */

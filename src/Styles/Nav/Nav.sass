@@ -23,7 +23,7 @@
             height: 150px
             width: 150px
             border-radius: 134px
-            background-color: #ffffff
+            background-color: $bk
             top: 58px
             box-shadow: $activeshadow
         .avatar
@@ -43,8 +43,10 @@
             justify-items: center
             height: 45px
             width: 180px
+            background: $bk
             box-shadow: $activeshadow
             font-family: 'Roboto', sans-serif
+            color: #ffffff
 
         a
             display: grid
@@ -52,16 +54,17 @@
             @include shadow($shadow  , $transition , 27px )
             width: 180px
             height: 30px
-            &:hover
 
             .icons
                 display: grid
                 place-content: center
                 font-size: 23px
+                color: #4f7afe
 
         a.active
             box-shadow: $activeshadow
+            background: $bk
     .content
         display: grid
         @include shadow($shadow  , $transition , 10px )
-        padding: 10px
+        padding: 30px

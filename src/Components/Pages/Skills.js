@@ -7,7 +7,7 @@ function Skills() {
   return (
     <motion.div className="main-skills">
       <motion.div className="languages">
-        <div className="title">Languages I speake</div>
+        <div className="title">Languages I speak</div>
         {skills.map((item) => (
           <Fragment key={item.id} >
             <div className="icons" style={{ color: item.color }}>{item.languge}</div>

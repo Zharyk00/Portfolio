@@ -9,22 +9,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 1px 80px;
+  grid-gap: 1px 60px;
 }
 
 .main-about .text {
   display: -ms-grid;
   display: grid;
+  color: white;
   width: 80%;
   font-family: 'Charis SIL', serif;
   font-size: 24px;
   letter-spacing: 3px;
-  line-height: 50px;
   gap: 40px;
 }
 
 .main-about .text .me {
   text-align: center;
+  color: #4f7afe;
+  font-size: 25px;
 }
 
 .main-about .social-media {
@@ -33,11 +35,13 @@
   grid-auto-flow: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
   height: 70px;
   width: 60%;
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.3), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-  background: #e0e5ec;
+  -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+          box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+  background: #1C1C1E;
 }
 
 .main-about .social-media .social-icons {
@@ -45,6 +49,8 @@
   display: grid;
   font-size: 30px;
   place-content: center;
+  background: #1C1C1E;
+  height: 50px;
 }
 
 .main-about .social-media .social-icons a {
@@ -52,9 +58,9 @@
   display: grid;
   height: 50px;
   width: 50px;
-  background: #e0e5ec;
-  -webkit-box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
-          box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  background: #1C1C1E;
+  -webkit-box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+          box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
   -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
