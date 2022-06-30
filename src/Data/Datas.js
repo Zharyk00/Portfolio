@@ -4,10 +4,6 @@ import { MdWorkOutline } from "react-icons/md"
 import { TbBrandHtml5, TbBrandCss3, TbBrandJavascript } from "react-icons/tb"
 import { FaGit, FaReact } from "react-icons/fa"
 
-
-
-
-
 export const menu = [
   { id: 1, path: "/", links: <AiOutlineHome />, delay: 1.4 },
   { id: 2, path: "about", links: <BsPerson />, delay: 1.2 },
@@ -44,7 +40,13 @@ export const social = [
 
 
 
-
+export const projects = [
+  { id: 1, path: "https://www.siteground.com/", name: "Show" },
+  { id: 2, path: "http://amanatcity.kg/", name: "Show" },
+  { id: 3, path: "http://vg-stroy.com/", name: "Show" },
+  { id: 4, path: "https://www.coronavirus.vic.gov.au/get-pcr-test-covid-19", name: "Show" },
+  { id: 5, path: "https://www.zoho.com/sites/", name: "Show" },
+]
 
 
 

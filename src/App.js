@@ -6,7 +6,6 @@ import Nav from "./Components/Pages/Nav";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Skills from "./Components/Pages/Skills";
-import SayHello from "./Components/Pages/SayHello";
 import Portfolio from "./Components/Pages/Portfolio";
 export const userContext = React.createContext();
 function App() {
@@ -19,7 +18,6 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/skills" element={<Skills />}></Route>
           <Route path="/portfolio" element={<Portfolio />}></Route>
-          <Route path="/sayhello" element={<SayHello />}></Route>
         </Route>
       </Routes>
     </motion.div>

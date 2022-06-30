@@ -1,0 +1,58 @@
+.main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 1fr;
+      grid-template-rows: 50px 1fr;
+  width: 100%;
+}
+
+.main-container .title {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4f7afe;
+  font-size: 22px;
+}
+
+.main-container .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+.main-container .items a {
+  text-decoration: none;
+}
+
+.main-container .items a .images {
+  display: -ms-grid;
+  display: grid;
+  height: 200px;
+  width: 150px;
+  background: #1C1C1E;
+  justify-items: center;
+  -webkit-box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+          box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+  -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 0px;
+}
+
+.main-container .items a .images img {
+  height: 130px;
+  margin-top: 10px;
+  width: 130px;
+  border-radius: 0px;
+}
+
+.main-container .items a .images p {
+  color: #4f7afe;
+  font-size: 16px;
+}
+/*# sourceMappingURL=Projects.css.map */

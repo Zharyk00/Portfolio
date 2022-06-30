@@ -2,7 +2,7 @@ import React from "react";
 import "../../Styles/About/About.css"
 import { motion } from "framer-motion";
 import { social } from "../../Data/Datas";
-import { Link } from "react-router-dom"
+
 
 
 
