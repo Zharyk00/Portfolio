@@ -2,21 +2,21 @@
   display: -ms-grid;
   display: grid;
   height: 100%;
-  grid-row-gap: 10px;
+  grid-row-gap: 30px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 2fr 1fr;
-      grid-template-rows: 2fr 1fr;
+  -ms-grid-rows: 2fr 1.4fr;
+      grid-template-rows: 2fr 1.4fr;
 }
 
 .main-skills .languages {
   display: -ms-grid;
   display: grid;
+  gap: 5px;
 }
 
 .main-skills .languages .title {
   margin-left: 35%;
-  margin-top: 10px;
   display: -ms-grid;
   display: grid;
   background: #1C1C1E;
@@ -33,6 +33,9 @@
   display: -ms-grid;
   display: grid;
   width: 150px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   justify-items: center;
   -ms-grid-row-align: end;
       align-self: end;

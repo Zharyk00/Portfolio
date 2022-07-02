@@ -5,14 +5,14 @@
 
     display: grid
     height: 100%
-    grid-row-gap: 10px
+    grid-row-gap: 30px
     grid-template-columns: 1fr
-    grid-template-rows: 2fr 1fr
+    grid-template-rows: 2fr 1.4fr
     .languages
         display: grid
+        gap: 5px
         .title
             margin-left: 35%
-            margin-top: 10px
             display: grid
             background: $bk
             place-content: center
@@ -24,8 +24,8 @@
         .icons
             display: grid
             width: 150px
+            align-items: end
             justify-items: center
-
             align-self: end
             font-size: 25px
         .lines

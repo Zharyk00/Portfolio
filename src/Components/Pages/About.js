@@ -15,11 +15,13 @@ function About() {
         I'm a Web Developer from Kyrgyzstan.
         I use my passion and skills to create amazing
         and digital products by using  various tools and animations.
-        I'm going to be Independent employee with high attention to details
+        I'm going to be Independent employee with high attention to details.
+
       </motion.div>
       <motion.div className="social-media">
         {social.map(items => <motion.div key={items.id} className="social-icons"  ><a href={items.path} target="_blank" style={{ color: items.color }}>{items.icon}</a></motion.div>)}
       </motion.div>
+      <div className="level"><div>English :   Upper-intermediate</div></div>
     </motion.div >
 
   );

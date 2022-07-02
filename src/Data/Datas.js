@@ -1,8 +1,9 @@
 import { AiOutlineHome } from "react-icons/ai"
-import { BsBraces, BsPerson, BsGithub, BsTelegram, BsInstagram, BsWhatsapp } from "react-icons/bs"
+import { BsBraces, BsPerson, BsGithub, BsTelegram, BsInstagram, BsWhatsapp, BsEmojiSmileFill } from "react-icons/bs"
 import { MdWorkOutline } from "react-icons/md"
 import { TbBrandHtml5, TbBrandCss3, TbBrandJavascript } from "react-icons/tb"
-import { FaGit, FaReact } from "react-icons/fa"
+import { FaReact } from "react-icons/fa"
+
 
 export const menu = [
   { id: 1, path: "/hello", links: <AiOutlineHome />, delay: 1.4 },
@@ -15,19 +16,22 @@ export const skills = [
   { id: 0.1, number: 1, initial: 3, languge: <TbBrandHtml5 />, percent: "80%", rate: 80, color: "#D84924", },
   { id: 0.2, number: 2, initial: 3, languge: <TbBrandCss3 />, percent: "75%", rate: 75, color: "#0271B3" },
   { id: 0.3, number: 3, initial: 3, languge: <TbBrandJavascript />, percent: "60%", rate: 60, color: "#D99924", },
-  { id: 0.4, number: 4, initial: 3, languge: <FaReact />, percent: "70%", rate: 70, color: "#5CCFEE" },
-  { id: 0.5, number: 5, initial: 3, languge: <FaGit />, percent: "70%", rate: 70, color: "#009100", },
+  { id: 0.4, number: 4, initial: 3, languge: <FaReact />, percent: "70%", rate: 70, color: "#00CDF2" },
+
 ];
 
 export const tools = [
-  { id: 1, initial: 3, sub: "subReact", languge: "ReactRouter", color: "#e39302", },
-  { id: 2, initial: 3, sub: "subReact", languge: "FramerMotion", color: "#e39302", },
-  { id: 3, initial: 3, sub: "subReact", languge: "MaterialUi", color: "#e39302", },
-  { id: 4, initial: 3, sub: "subCss", languge: "Sass", color: "#e39302", },
-  { id: 5, initial: 3, sub: "subCss", languge: "FlexBox", color: "#e39302", },
-  { id: 6, initial: 3, sub: "subCss", languge: "CssGrid", color: "#e39302", },
-  { id: 7, initial: 3, sub: "subCss", languge: "Animation", color: "#e39302", },
-  { id: 8, initial: 3, sub: "subCss", languge: "Formik", color: "#e39302", }
+  { id: 0, languge: "Git", },
+  { id: 1, languge: "ReactRouter", },
+  { id: 2, languge: "FramerMotion", },
+  { id: 3, languge: "MaterialUi", },
+  { id: 4, languge: "Sass", },
+  { id: 5, languge: "FlexBox", },
+  { id: 6, languge: "CssGrid", },
+  { id: 7, languge: "Animation", },
+  { id: 8, languge: "Formik", },
+  { id: 9, languge: `EmailJs` },
+  { id: 10, languge: "Soon :-)" }
 ]
 
 export const social = [

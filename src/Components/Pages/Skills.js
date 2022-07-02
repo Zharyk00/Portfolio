@@ -27,7 +27,7 @@ function Skills() {
       <motion.div className="tools">
         {tools.map(item => (
           <motion.div key={item.id} className="tools__items">
-            <span style={{ color: item.color }}>{item.languge}</span>
+            <span style={{ color: "#4f7afe" }}>{item.languge}</span>
           </motion.div>
         ))}
       </motion.div>

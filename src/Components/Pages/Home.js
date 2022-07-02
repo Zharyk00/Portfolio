@@ -21,7 +21,7 @@ function Home() {
       console.log(sentForm.text)
     }
     catch (error) {
-      console.log("Something going wrong:", error)
+      console.log("Something went wrong:", error)
     }
   }
   const ValidatioSchema = Yup.object({
@@ -41,7 +41,7 @@ function Home() {
           <motion.h1
             className="first"
             style={{ color: "#4f7afe" }}
-            whileHover={{ x: 20, transition: { type: "spring", stiffness: 200 }, }}
+            whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
             onHoverStart={() => setGreet("World")}
             onHoverEnd={() => setGreet("Hello")}>
             {greet}
@@ -49,7 +49,7 @@ function Home() {
           <motion.h1
             className="first"
             style={{ color: "white" }}
-            whileHover={{ x: 20, transition: { type: "spring", stiffness: 200 }, }}
+            whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
             onHoverStart={() => setWho("Web")}
             onHoverEnd={() => setWho("I am")}>
             {who}
@@ -57,7 +57,7 @@ function Home() {
           <motion.h1
             className="first"
             style={{ color: "white" }}
-            whileHover={{ x: 20, transition: { type: "spring", stiffness: 200 }, }}
+            whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
             onHoverStart={() => setName("Developer")}
             onHoverEnd={() => setName("Zharyk")} >
             {name}
