@@ -8,7 +8,7 @@ export const menu = [
   { id: 1, path: "/", links: <AiOutlineHome />, delay: 1.4 },
   { id: 2, path: "about", links: <BsPerson />, delay: 1.2 },
   { id: 3, path: "skills", links: <BsBraces />, delay: 1 },
-  { id: 4, path: "portfolio", links: <MdWorkOutline />, delay: 0.8 },
+  { id: 4, path: "work", links: <MdWorkOutline />, delay: 0.8 },
 ];
 
 export const skills = [

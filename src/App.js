@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/skills" element={<Skills />}></Route>
-          <Route path="/portfolio" element={<Portfolio />}></Route>
+          <Route path="/work" element={<Portfolio />}></Route>
         </Route>
       </Routes>
     </motion.div>
