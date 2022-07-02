@@ -5,7 +5,7 @@ import { TbBrandHtml5, TbBrandCss3, TbBrandJavascript } from "react-icons/tb"
 import { FaGit, FaReact } from "react-icons/fa"
 
 export const menu = [
-  { id: 1, path: "/", links: <AiOutlineHome />, delay: 1.4 },
+  { id: 1, path: "/hello", links: <AiOutlineHome />, delay: 1.4 },
   { id: 2, path: "about", links: <BsPerson />, delay: 1.2 },
   { id: 3, path: "skills", links: <BsBraces />, delay: 1 },
   { id: 4, path: "work", links: <MdWorkOutline />, delay: 0.8 },
