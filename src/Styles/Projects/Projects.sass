@@ -6,30 +6,15 @@
     width: 100%
     .title
         display: grid
+        align-content: center
         justify-content: center
         color: #4f7afe
         font-size: 22px
-
-    .items
+    .content-work
         display: grid
-        grid-template-columns: repeat(4 ,1fr)
-        place-items: center
-        a
-            text-decoration: none
-            .images
-                display: grid
-                height: 200px
-                width: 150px
-                background: $bk
-                justify-items: center
-
-                @include shadow($shadow  , $transition , 0px )
-
-                img
-                    height: 130px
-                    margin-top: 10px
-                    width: 130px
-                    border-radius: 0px
-                p
-                    color: #4f7afe
-                    font-size: 16px
+        place-content: center
+        font-size: 45px
+        color: #4f7afe
+        gap: 30px
+        .icon
+            margin-left: 110px
