@@ -4,10 +4,15 @@
 .main-nav
     display: grid
     width: 100%
-    grid-template-columns: 20% 70% 5%
+    grid-template-columns: 20% 70%
     grid-template-rows: repeat( auto-fill, minmax(560px , 1fr) )
     column-gap: 20px
     background: $bk
+    @media (max-width: 375px)
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 200px 560px
+        row-gap: 20px
 
     .links
         display: grid
@@ -18,35 +23,62 @@
         grid-auto-flow: row
         gap: 36px 0px
         @include shadow($shadow  , $transition , 10px )
+        @media (max-width: 375px)
+            display: grid
+            grid-auto-flow: column
+            gap: 0px 5px
         .effect
             position: absolute
             height: 150px
             width: 150px
             border-radius: 134px
             background-color: $bk
-            top: 58px
+            top: 63px
             box-shadow: $activeshadow
-        .avatar
-            background-image: url('../../Pictures/real.jpg')
-            border-radius: 50%
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
-            height: 130px
-            width: 130px
-            box-shadow: $activeshadow
-            @include shadow($shadow  , $transition , 134px )
+            @media (max-width: 375px)
+                left: 40px
+                top: 16px
+        .about-me
             z-index: 1
-        .name
+            width: 100%
+            height: 200px
             display: grid
-            align-items: center
             justify-items: center
-            height: 45px
-            width: 180px
-            background: $bk
-            box-shadow: $activeshadow
-            font-family: 'Roboto', sans-serif
-            color: #ffffff
+            @media (max-width: 375px)
+                width: 200px
+                height: 50px
+                display: grid
+                grid-auto-flow: row
+            .avatar
+                background-image: url('../../Pictures/real.jpg')
+                border-radius: 50%
+                background-size: cover
+                background-position: center
+                background-repeat: no-repeat
+                height: 130px
+                width: 130px
+                box-shadow: $activeshadow
+                @include shadow($shadow  , $transition , 134px )
+                @media (max-width: 375px)
+                    height: 80px
+                    width: 80px
+            .name
+                display: grid
+                align-items: center
+                justify-items: center
+                height: 45px
+                width: 180px
+                background: $bk
+                box-shadow: $activeshadow
+                font-family: 'Roboto', sans-serif
+                color: #ffffff
+                @media (max-width: 375px)
+                    display: grid
+                    place-items: center
+                    height: 30px
+                    padding: 5px
+                    width: 150px
+                    font-size: 13px
 
         a
             display: grid

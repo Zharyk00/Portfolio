@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "../../Styles/Nav/Nav.css";
 import { motion } from "framer-motion";
 import { NavLink, Outlet } from "react-router-dom";
@@ -13,10 +13,12 @@ function Nav() {
     <motion.div className="main-nav">
       <motion.div className="links">
         <div className="effect"></div>
-        <motion.div className="avatar"></motion.div>
-        <motion.div className="name">
-          Zharyk Bekmamatov<br /><small>Web Developer</small>
-        </motion.div>
+        <div className="about-me">
+          <motion.div className="avatar"></motion.div>
+          <motion.div className="name">
+            Zharyk Bekmamatov<br /><small>Web Developer</small>
+          </motion.div>
+        </div>
         {menu.map((items) => {
           return (
             <motion.div
@@ -33,9 +35,6 @@ function Nav() {
       </motion.div>
       <motion.div className="content">
         <Outlet />
-      </motion.div>
-      <motion.div className="dark-mode">
-
       </motion.div>
     </motion.div>
 
