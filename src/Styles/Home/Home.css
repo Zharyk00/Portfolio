@@ -101,6 +101,10 @@
           column-gap: 10px;
 }
 
+.main-page .container .form .form__inputs:focus {
+  background: transparent;
+}
+
 .main-page .container .form .form__inputs label {
   color: #4f7afe;
   display: -ms-grid;

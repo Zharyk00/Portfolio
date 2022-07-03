@@ -31,6 +31,9 @@ function Skills() {
           </motion.div>
         ))}
       </motion.div>
+      <div className="exper">Experienced with: <span className="experienced">Nodejs,</span>
+        <span className="experienced">Expressjs,</span>
+        <span className="experienced">MongoDB</span></div>
     </motion.div>
   );
 }

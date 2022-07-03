@@ -29,6 +29,10 @@
   font-size: 25px;
 }
 
+.main-about .text .text-about .emphasize {
+  color: #EED96E;
+}
+
 .main-about .level {
   display: -ms-grid;
   display: grid;

@@ -5,8 +5,8 @@
   grid-row-gap: 30px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 2fr 1.4fr;
-      grid-template-rows: 2fr 1.4fr;
+  -ms-grid-rows: 2fr 1.4fr 0.2fr;
+      grid-template-rows: 2fr 1.4fr 0.2fr;
 }
 
 .main-skills .languages {
@@ -65,8 +65,8 @@
 .main-skills .tools {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -92,5 +92,24 @@
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   border-radius: 20px;
+}
+
+.main-skills .exper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  grid-auto-flow: column;
+  font-size: 22px;
+  padding-left: 26px;
+  color: white;
+}
+
+.main-skills .exper .experienced {
+  color: #EED96E;
+  font-size: 22px;
 }
 /*# sourceMappingURL=Skills.css.map */

@@ -7,7 +7,7 @@
     height: 100%
     grid-row-gap: 30px
     grid-template-columns: 1fr
-    grid-template-rows: 2fr 1.4fr
+    grid-template-rows: 2fr 1.4fr 0.2fr
     .languages
         display: grid
         gap: 5px
@@ -44,7 +44,7 @@
 
     .tools
         display: grid
-        grid-template-columns: repeat(4 , 1fr)
+        grid-template-columns: repeat(5 , 1fr)
         justify-items: center
         align-items: center
         .tools__items
@@ -56,3 +56,14 @@
             font-size: 15px
             font-family: 'Roboto', sans-serif
             @include shadow($shadow, $transition , 20px )
+    .exper
+        display: grid
+        column-gap: 12px
+        justify-content: start
+        grid-auto-flow: column
+        font-size: 22px
+        padding-left: 26px
+        color: white
+        .experienced
+            color: #EED96E
+            font-size: 22px

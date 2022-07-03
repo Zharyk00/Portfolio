@@ -31,7 +31,6 @@ export const tools = [
   { id: 7, languge: "Animation", },
   { id: 8, languge: "Formik", },
   { id: 9, languge: `EmailJs` },
-  { id: 10, languge: "Soon :-)" }
 ]
 
 export const social = [

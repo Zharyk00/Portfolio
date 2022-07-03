@@ -1,24 +1,41 @@
 import React, { useState, useRef, useEffect } from "react";
 import emailjs from '@emailjs/browser';
-import { Button } from '@mui/material'
+import { Button, Snackbar, Slide } from '@mui/material'
 import { motion } from "framer-motion";
 import { Formik, Form, Field, ErrorMessage, useFormik } from "formik"
 import { BsFillPersonFill } from "react-icons/bs"
 import { SiGmail, SiGooglemessages } from "react-icons/si"
 import "../../Styles/Home/Home.css";
 import * as Yup from 'yup'
+import MuiAlert from '@mui/material/Alert';
 function Home() {
+
   const form = useRef();
   const [greet, setGreet] = useState("Hello");
   const [who, setWho] = useState("I am");
   const [name, setName] = useState("Zharyk");
+  const [open, setOpen] = useState(false)
 
+
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
   const initialValues = { name: '', gmail: '', massage: '' }
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
       const sentForm = await emailjs.sendForm('service_1akujeo', 'template_egho8is', form.current, 'MmbEmr0wzQvDHu2CG')
-      console.log(sentForm.text)
+      console.log(sentForm)
+      setOpen(!!sentForm.status)
     }
     catch (error) {
       console.log("Something went wrong:", error)
@@ -29,6 +46,7 @@ function Home() {
     gmail: Yup.string().email("invalid email name").required("required"),
     message: Yup.string().required("required"),
   })
+
 
 
 
@@ -72,7 +90,7 @@ function Home() {
 
         {(formik) => (
           <div className="container">
-            <Form ref={form} onSubmit={onSubmit} className="form" >
+            <Form ref={form} onSubmit={onSubmit} className="form" autoComplete="off">
               <h3 className="title">Say Hello</h3>
               <div className="form__inputs">
                 <label htmlFor="name"> {<BsFillPersonFill />}</label>
@@ -89,8 +107,16 @@ function Home() {
                 <Field as="textarea" name="message" id="message" placeholder="message" />
               </div>
               <ErrorMessage name="message" component="p" />
-              <Button type="submit" disableRipple disabled={!(formik.isValid && formik.dirty)} className="button">Send</Button>
+              <Button type="submit" onClick={() => open ? setOpen(true) : setOpen(false)} disableRipple disabled={!(formik.isValid && formik.dirty)} className="button">Send</Button>
             </Form>
+            <Snackbar open={open} autoHideDuration={3000} onClose={handleClose} anchorOrigin={{
+              vertical: "top",
+              horizontal: "right"
+            }}>
+              <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                Message submitted successfully!
+              </Alert>
+            </Snackbar>
           </div>
 
         )}
