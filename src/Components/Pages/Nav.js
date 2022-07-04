@@ -12,7 +12,7 @@ function Nav() {
 
     <motion.div className="main-nav">
       <motion.div className="links">
-        {/* <div className="effect"></div> */}
+        <div className="effect"></div>
         <div className="about-me">
           <motion.div className="avatar"></motion.div>
           <motion.div className="name">

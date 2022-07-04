@@ -4,13 +4,14 @@
     display: grid
     grid-template-columns: 1fr , 1fr
     grid-auto-flow: column
-    background-color: $bk
     place-items: center
     @media (max-width: 415px)
-        grid-template-columns: 1fr
-        grid-template-rows: auto
+        display: grid
+        place-content: center
+        grid-template-columns: 380px
+        grid-template-rows: 80px , 420px
         grid-auto-flow: row
-        row-gap: 20px
+        row-gap: 30px
     .greet-container
         display: grid
         .greet
@@ -28,13 +29,16 @@
             @media (max-width: 960px)
                 height: 300px
                 width: 230px
+            @media (max-width: 800px)
+                height: 300px
+                width: 200px
             @media (max-width: 415px)
                 display: grid
                 grid-auto-flow: column
                 justify-content: space-evenly
                 align-items: center
                 height: 80px
-                width: 300px
+                width: 320px
                 @include shadow($shadow , $transition  , 5px )
 
             h1
@@ -60,8 +64,6 @@
         justify-content: center
         align-content: center
         background: $bk
-        @media (max-width: 415px)
-            width: 400px
 
         .form
             display: grid
@@ -79,9 +81,12 @@
             @media (max-width: 960px)
                 height: 300px
                 width: 230px
-            @media (max-width: 415px)
+            @media (max-width: 800px)
                 height: 300px
-                width: 300px
+                width: 200px
+            @media (max-width: 415px)
+                height: 400px
+                width: 320px
                 @include shadow($shadow , $transition  , 5px )
 
             .title
@@ -116,7 +121,11 @@
                     @media (max-width: 960px)
                         width: 150px
                     @media (max-width: 415px)
-                        width: 200px
+                        width: 220px
+                        box-shadow: $activeshadow
+                        -webkit-box-shadow: $activeshadow
+                        -webkit-appearance: none
+
                 textarea
                     color: white
                     padding-top: 5px
@@ -132,7 +141,8 @@
                     @media (max-width: 960px)
                         width: 150px
                     @media (max-width: 415px)
-                        width: 200px
+                        width: 220px
+                        box-shadow: $activeshadow
             p
                 color: #e93030
 
@@ -148,6 +158,6 @@
                 @media (max-width: 960px)
                     width: 150px
                 @media (max-width: 415px)
-                    width: 200px
+                    width: 220px
                 &:active
                     box-shadow: $activeshadow
