@@ -6,9 +6,11 @@
     grid-auto-flow: column
     background-color: $bk
     place-items: center
-    @media (max-width: 375px)
+    @media (max-width: 415px)
         grid-template-columns: 1fr
+        grid-template-rows: auto
         grid-auto-flow: row
+        row-gap: 20px
     .greet-container
         display: grid
         .greet
@@ -26,9 +28,14 @@
             @media (max-width: 960px)
                 height: 300px
                 width: 230px
-            @media (max-width: 375px)
-                height: 200px
-                width: 180px
+            @media (max-width: 415px)
+                display: grid
+                grid-auto-flow: column
+                justify-content: space-evenly
+                align-items: center
+                height: 80px
+                width: 300px
+                @include shadow($shadow , $transition  , 5px )
 
             h1
                 display: grid
@@ -42,14 +49,19 @@
                 @media (max-width: 960px)
                     font-size: 50px
                     height: 40px
-                @media (max-width: 375px)
+                @media (max-width: 415px)
+                    display: grid
+                    align-content: center
                     font-size: 22px
-                    height: 20px
+                    display: grid
+
     .container
         display: grid
         justify-content: center
         align-content: center
         background: $bk
+        @media (max-width: 415px)
+            width: 400px
 
         .form
             display: grid
@@ -67,9 +79,10 @@
             @media (max-width: 960px)
                 height: 300px
                 width: 230px
-            @media (max-width: 375px)
-                height: 200px
-                width: 180px
+            @media (max-width: 415px)
+                height: 300px
+                width: 300px
+                @include shadow($shadow , $transition  , 5px )
 
             .title
                 text-align: center
@@ -102,8 +115,8 @@
                     background: none
                     @media (max-width: 960px)
                         width: 150px
-                    @media (max-width: 375px)
-                        width: 80px
+                    @media (max-width: 415px)
+                        width: 200px
                 textarea
                     color: white
                     padding-top: 5px
@@ -118,8 +131,8 @@
                     resize: none
                     @media (max-width: 960px)
                         width: 150px
-                    @media (max-width: 375px)
-                        width: 80px
+                    @media (max-width: 415px)
+                        width: 200px
             p
                 color: #e93030
 
@@ -134,7 +147,7 @@
                 background: $bk
                 @media (max-width: 960px)
                     width: 150px
-                @media (max-width: 375px)
-                    width: 80px
+                @media (max-width: 415px)
+                    width: 200px
                 &:active
                     box-shadow: $activeshadow

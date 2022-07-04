@@ -8,10 +8,11 @@
     grid-template-rows: repeat( auto-fill, minmax(560px , 1fr) )
     column-gap: 20px
     background: $bk
-    @media (max-width: 375px)
+    @media (max-width: 415px)
         display: grid
-        grid-template-columns: 1fr
-        grid-template-rows: 200px 560px
+        justify-content: center
+        grid-template-columns: 364px
+        grid-template-rows: 70px 400px
         row-gap: 20px
 
     .links
@@ -19,14 +20,16 @@
         background: $bk
         justify-content: center
         align-content: center
+        align-items: center
         justify-items: center
         grid-auto-flow: row
         gap: 36px 0px
         @include shadow($shadow  , $transition , 10px )
-        @media (max-width: 375px)
+        @media (max-width: 415px)
             display: grid
             grid-auto-flow: column
             gap: 0px 5px
+            justify-content: space-evenly
         .effect
             position: absolute
             height: 150px
@@ -35,17 +38,20 @@
             background-color: $bk
             top: 63px
             box-shadow: $activeshadow
-            @media (max-width: 375px)
+            @media (max-width: 415px)
                 left: 40px
                 top: 16px
         .about-me
             z-index: 1
+            margin-right: 40px
             width: 100%
             height: 200px
             display: grid
             justify-items: center
-            @media (max-width: 375px)
-                width: 200px
+            row-gap: 5px
+            margin-bottom: 10px
+            @media (max-width: 415px)
+                width: 80px
                 height: 50px
                 display: grid
                 grid-auto-flow: row
@@ -59,9 +65,9 @@
                 width: 130px
                 box-shadow: $activeshadow
                 @include shadow($shadow  , $transition , 134px )
-                @media (max-width: 375px)
-                    height: 80px
-                    width: 80px
+                @media (max-width: 415px)
+                    height: 40px
+                    width: 40px
             .name
                 display: grid
                 align-items: center
@@ -72,13 +78,13 @@
                 box-shadow: $activeshadow
                 font-family: 'Roboto', sans-serif
                 color: #ffffff
-                @media (max-width: 375px)
+                @media (max-width: 415px)
                     display: grid
                     place-items: center
-                    height: 30px
-                    padding: 5px
-                    width: 150px
-                    font-size: 13px
+                    height: 10px
+                    padding: 2px
+                    width: 80px
+                    font-size: 8px
 
         a
             display: grid
@@ -86,12 +92,20 @@
             @include shadow($shadow  , $transition , 27px )
             width: 180px
             height: 30px
+            @media (max-width: 415px)
+                display: grid
+                place-content: center
+                @include shadow($shadow  , $transition , 134px )
+                width: 40px
+                height: 40px
 
             .icons
                 display: grid
                 place-content: center
-                font-size: 23px
+                font-size: 26px
                 color: #4f7afe
+                @media (max-width: 415px)
+                    font-size: 18px
 
         a.active
             box-shadow: $activeshadow
@@ -100,3 +114,5 @@
         display: grid
         @include shadow($shadow  , $transition , 10px )
         padding: 30px
+        @media (max-width: 415px)
+            padding: 6px

@@ -11,14 +11,17 @@
   background: #1C1C1E;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   .main-nav {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 200px 560px;
-        grid-template-rows: 200px 560px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 364px;
+        grid-template-columns: 364px;
+    -ms-grid-rows: 70px 400px;
+        grid-template-rows: 70px 400px;
     row-gap: 20px;
   }
 }
@@ -32,6 +35,9 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
   grid-auto-flow: row;
   gap: 36px 0px;
@@ -44,12 +50,15 @@
   border-radius: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   .main-nav .links {
     display: -ms-grid;
     display: grid;
     grid-auto-flow: column;
     gap: 0px 5px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -64,7 +73,7 @@
           box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   .main-nav .links .effect {
     left: 40px;
     top: 16px;
@@ -73,16 +82,19 @@
 
 .main-nav .links .about-me {
   z-index: 1;
+  margin-right: 40px;
   width: 100%;
   height: 200px;
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  row-gap: 5px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   .main-nav .links .about-me {
-    width: 200px;
+    width: 80px;
     height: 50px;
     display: -ms-grid;
     display: grid;
@@ -109,10 +121,10 @@
   border-radius: 134px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   .main-nav .links .about-me .avatar {
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
   }
 }
 
@@ -132,15 +144,15 @@
   color: #ffffff;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   .main-nav .links .about-me .name {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    height: 30px;
-    padding: 5px;
-    width: 150px;
-    font-size: 13px;
+    height: 10px;
+    padding: 2px;
+    width: 80px;
+    font-size: 8px;
   }
 }
 
@@ -159,12 +171,35 @@
   height: 30px;
 }
 
+@media (max-width: 415px) {
+  .main-nav .links a {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    -webkit-box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+            box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+    -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+    transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+    transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+    transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+    border-radius: 134px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .main-nav .links a .icons {
   display: -ms-grid;
   display: grid;
   place-content: center;
-  font-size: 23px;
+  font-size: 26px;
   color: #4f7afe;
+}
+
+@media (max-width: 415px) {
+  .main-nav .links a .icons {
+    font-size: 18px;
+  }
 }
 
 .main-nav .links a.active {
@@ -184,5 +219,11 @@
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   border-radius: 10px;
   padding: 30px;
+}
+
+@media (max-width: 415px) {
+  .main-nav .content {
+    padding: 6px;
+  }
 }
 /*# sourceMappingURL=Nav.css.map */

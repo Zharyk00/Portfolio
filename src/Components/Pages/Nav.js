@@ -12,13 +12,14 @@ function Nav() {
 
     <motion.div className="main-nav">
       <motion.div className="links">
-        <div className="effect"></div>
+        {/* <div className="effect"></div> */}
         <div className="about-me">
           <motion.div className="avatar"></motion.div>
           <motion.div className="name">
-            Zharyk Bekmamatov<br /><small>Web Developer</small>
+            Zharyk Bekmamatov
           </motion.div>
         </div>
+
         {menu.map((items) => {
           return (
             <motion.div
@@ -32,6 +33,7 @@ function Nav() {
             </motion.div>
           );
         })}
+
       </motion.div>
       <motion.div className="content">
         <Outlet />
