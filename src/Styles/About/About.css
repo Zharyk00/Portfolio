@@ -9,14 +9,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 1px 60px;
-  padding: 10px;
+  row-gap: 10px;
+  padding-left: 10px;
 }
 
 @media (max-width: 415px) {
   .main-about {
     display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 3fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 1fr;
   }
 }
 
