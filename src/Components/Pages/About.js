@@ -13,9 +13,9 @@ function About() {
       <motion.div className="text">
         <motion.div className="me">Who am I?</motion.div>
         <div className="text-about">
-          I'm a <span className="emphasize">Web Developer</span> from Kyrgyzstan.
+          I'm a <span className="emphasize">Web Developer</span> from Kyrgyzstan.<br />
           I use my passion and skills to create <span className="emphasize">Cross-browser </span>
-          and <span className="emphasize">Adaptive </span> products by using  various tools and animations.
+          and <span className="emphasize">Adaptive </span> products by using  various tools and animations.<br />
           I'm going to be <span className="emphasize">Independent</span> employee with high attention to details.
         </div>
       </motion.div>

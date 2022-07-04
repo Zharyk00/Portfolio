@@ -21,6 +21,11 @@
             width: 200px
             box-shadow: $activeshadow
             color: #4f7afe
+            @media (max-width: 415px)
+                font-size: 18px
+                height: 25px
+                width: 180px
+                margin-left: 25%
         .icons
             display: grid
             width: 150px
@@ -28,6 +33,12 @@
             justify-items: center
             align-self: end
             font-size: 25px
+            @media (max-width: 415px)
+                display: grid
+                justify-items: start
+                font-size: 20px
+                padding-left: 40px
+
         .lines
             display: grid
             place-self: center
@@ -35,18 +46,24 @@
             width: 80%
             border-radius: 27px
             box-shadow: $activeshadow
+            @media (max-width: 415px)
+                width: 80%
+                height: 12px
             .lines__color
                 height: 100%
-
                 border-radius: 27px
-                .lines__icons
-                    font-size: 20px
 
     .tools
         display: grid
         grid-template-columns: repeat(5 , 1fr)
         justify-items: center
         align-items: center
+        @media (max-width: 415px)
+            justify-content: center
+            width: 89%
+            justify-self: center
+            grid-template-columns: repeat(3 , 1fr)
+
         .tools__items
             display: grid
             justify-content: center
@@ -56,14 +73,25 @@
             font-size: 15px
             font-family: 'Roboto', sans-serif
             @include shadow($shadow, $transition , 20px )
+            @media (max-width: 415px)
+                display: grid
+                height: 30px
+                width: 80px
+                font-size: 11px
     .exper
         display: grid
         column-gap: 12px
         justify-content: start
         grid-auto-flow: column
         font-size: 22px
-        padding-left: 26px
+        padding-left: 20px
         color: white
+        @media (max-width: 415px)
+            font-size: 12px
+            column-gap: 6px
         .experienced
             color: #EED96E
             font-size: 22px
+
+            @media (max-width: 415px)
+                font-size: 12px

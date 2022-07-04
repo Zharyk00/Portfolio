@@ -29,6 +29,15 @@
   color: #4f7afe;
 }
 
+@media (max-width: 415px) {
+  .main-skills .languages .title {
+    font-size: 18px;
+    height: 25px;
+    width: 180px;
+    margin-left: 25%;
+  }
+}
+
 .main-skills .languages .icons {
   display: -ms-grid;
   display: grid;
@@ -42,6 +51,16 @@
   font-size: 25px;
 }
 
+@media (max-width: 415px) {
+  .main-skills .languages .icons {
+    display: -ms-grid;
+    display: grid;
+    justify-items: start;
+    font-size: 20px;
+    padding-left: 40px;
+  }
+}
+
 .main-skills .languages .lines {
   display: -ms-grid;
   display: grid;
@@ -53,13 +72,16 @@
           box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
 }
 
+@media (max-width: 415px) {
+  .main-skills .languages .lines {
+    width: 80%;
+    height: 12px;
+  }
+}
+
 .main-skills .languages .lines .lines__color {
   height: 100%;
   border-radius: 27px;
-}
-
-.main-skills .languages .lines .lines__color .lines__icons {
-  font-size: 20px;
 }
 
 .main-skills .tools {
@@ -71,6 +93,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 415px) {
+  .main-skills .tools {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 89%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .main-skills .tools .tools__items {
@@ -94,6 +129,16 @@
   border-radius: 20px;
 }
 
+@media (max-width: 415px) {
+  .main-skills .tools .tools__items {
+    display: -ms-grid;
+    display: grid;
+    height: 30px;
+    width: 80px;
+    font-size: 11px;
+  }
+}
+
 .main-skills .exper {
   display: -ms-grid;
   display: grid;
@@ -104,12 +149,26 @@
           justify-content: start;
   grid-auto-flow: column;
   font-size: 22px;
-  padding-left: 26px;
+  padding-left: 20px;
   color: white;
+}
+
+@media (max-width: 415px) {
+  .main-skills .exper {
+    font-size: 12px;
+    -webkit-column-gap: 6px;
+            column-gap: 6px;
+  }
 }
 
 .main-skills .exper .experienced {
   color: #EED96E;
   font-size: 22px;
+}
+
+@media (max-width: 415px) {
+  .main-skills .exper .experienced {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=Skills.css.map */

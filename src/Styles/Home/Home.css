@@ -273,8 +273,9 @@
 @media (max-width: 415px) {
   .main-page .container .form .form__inputs textarea {
     width: 220px;
+    box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
     -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
-            box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+    -webkit-appearance: none;
   }
 }
 

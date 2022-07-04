@@ -7,19 +7,27 @@
     justify-items: center
     align-items: center
     grid-gap: 1px 60px
+    padding: 10px
+    @media (max-width: 415px)
+        display: grid
 
     .text
         display: grid
         color: white
-        width: 93%
+        width: 95%
         font-family: 'Charis SIL', serif
         font-size: 24px
         letter-spacing: 3px
         gap: 40px
+        @media (max-width: 415px)
+            font-size: 20px
+
         .me
             text-align: center
             color: #4f7afe
             font-size: 25px
+            @media (max-width: 415px)
+                font-size: 22px
         .text-about
 
             .emphasize
@@ -33,6 +41,10 @@
         place-content: center
         box-shadow: $activeshadow
         color: #EED96E
+        @media (max-width: 415px)
+            font-size: 20px
+            width: 300px
+            margin-bottom: 20px
     .social-media
         display: grid
         grid-auto-flow: column
@@ -42,6 +54,8 @@
         width: 60%
         box-shadow: $activeshadow
         background: $bk
+        @media (max-width: 415px)
+            width: 300px
         .social-icons
             display: grid
             font-size: 30px

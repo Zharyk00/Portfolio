@@ -10,23 +10,43 @@
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 1px 60px;
+  padding: 10px;
+}
+
+@media (max-width: 415px) {
+  .main-about {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 
 .main-about .text {
   display: -ms-grid;
   display: grid;
   color: white;
-  width: 93%;
+  width: 95%;
   font-family: 'Charis SIL', serif;
   font-size: 24px;
   letter-spacing: 3px;
   gap: 40px;
 }
 
+@media (max-width: 415px) {
+  .main-about .text {
+    font-size: 20px;
+  }
+}
+
 .main-about .text .me {
   text-align: center;
   color: #4f7afe;
   font-size: 25px;
+}
+
+@media (max-width: 415px) {
+  .main-about .text .me {
+    font-size: 22px;
+  }
 }
 
 .main-about .text .text-about .emphasize {
@@ -45,6 +65,14 @@
   color: #EED96E;
 }
 
+@media (max-width: 415px) {
+  .main-about .level {
+    font-size: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
 .main-about .social-media {
   display: -ms-grid;
   display: grid;
@@ -58,6 +86,12 @@
   -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
           box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
   background: #1C1C1E;
+}
+
+@media (max-width: 415px) {
+  .main-about .social-media {
+    width: 300px;
+  }
 }
 
 .main-about .social-media .social-icons {

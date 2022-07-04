@@ -27,7 +27,20 @@
   gap: 30px;
 }
 
+@media (max-width: 415px) {
+  .main-container .content-work {
+    font-size: 26px;
+  }
+}
+
 .main-container .content-work .icon {
   margin-left: 110px;
+}
+
+@media (max-width: 415px) {
+  .main-container .content-work .icon {
+    margin-left: 70px;
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=Projects.css.map */
