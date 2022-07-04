@@ -6,8 +6,10 @@
     display: grid
     height: 100%
     grid-row-gap: 30px
-    grid-template-columns: 370px
+    grid-template-columns: 1fr
     grid-template-rows: 2fr 1.4fr 0.2fr
+    @media (max-width: 415px)
+        grid-template-columns: 370px
     .languages
         display: grid
         gap: 5px
@@ -29,12 +31,13 @@
                 margin-left: 25%
         .icons
             display: grid
-            width: 40px
+            width: 150px
             align-items: end
             justify-items: center
             align-self: end
             font-size: 25px
             @media (max-width: 415px)
+                width: 40px
                 display: grid
                 justify-items: end
                 font-size: 20px

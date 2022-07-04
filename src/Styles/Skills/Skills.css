@@ -3,10 +3,17 @@
   display: grid;
   height: 100%;
   grid-row-gap: 30px;
-  -ms-grid-columns: 370px;
-      grid-template-columns: 370px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: 2fr 1.4fr 0.2fr;
       grid-template-rows: 2fr 1.4fr 0.2fr;
+}
+
+@media (max-width: 415px) {
+  .main-skills {
+    -ms-grid-columns: 370px;
+        grid-template-columns: 370px;
+  }
 }
 
 .main-skills .languages {
@@ -42,7 +49,7 @@
 .main-skills .languages .icons {
   display: -ms-grid;
   display: grid;
-  width: 40px;
+  width: 150px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
@@ -54,6 +61,7 @@
 
 @media (max-width: 415px) {
   .main-skills .languages .icons {
+    width: 40px;
     display: -ms-grid;
     display: grid;
     justify-items: end;

@@ -8,10 +8,9 @@
 }
 
 .main-container .title {
-  display: -ms-grid;
-  display: grid;
+  padding-right: 45px;
   color: #4f7afe;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .main-container .content-work {
