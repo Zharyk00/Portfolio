@@ -4,16 +4,12 @@
   -ms-grid-rows: 50px 1fr;
       grid-template-rows: 50px 1fr;
   width: 100%;
+  place-items: center;
 }
 
 .main-container .title {
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #4f7afe;
   font-size: 22px;
 }
@@ -21,25 +17,39 @@
 .main-container .content-work {
   display: -ms-grid;
   display: grid;
-  place-content: center;
-  font-size: 45px;
+  font-size: 30px;
   color: #4f7afe;
-  gap: 30px;
+  row-gap: 30px;
 }
 
 @media (max-width: 415px) {
   .main-container .content-work {
     font-size: 26px;
+    place-items: center;
   }
 }
 
+.main-container .content-work .titles {
+  font-size: 30px;
+}
+
+@media (max-width: 415px) {
+  .main-container .content-work .titles {
+    font-size: 26px;
+  }
+}
+
+.main-container .content-work .titles .mark {
+  color: #EED96E;
+}
+
 .main-container .content-work .icon {
-  margin-left: 110px;
+  margin-left: 90px;
 }
 
 @media (max-width: 415px) {
   .main-container .content-work .icon {
-    margin-left: 70px;
+    margin-left: 1px;
     font-size: 30px;
   }
 }

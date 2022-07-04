@@ -13,6 +13,8 @@ function Portfolio() {
       <motion.div className="content-work">
         Comming soon!
         <BsEmojiSmileUpsideDown className="icon" />
+        <div className="titles">Experience:   <span className="mark">1 year</span></div>
+        <div className="titles">Studied at:   <span className="mark">itpark_osh</span></div>
       </motion.div>
     </motion.div>
   );

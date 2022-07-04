@@ -4,22 +4,29 @@
     display: grid
     grid-template-rows: 50px 1fr
     width: 100%
+    place-items: center
+
     .title
         display: grid
-        align-content: center
-        justify-content: center
         color: #4f7afe
         font-size: 22px
     .content-work
         display: grid
-        place-content: center
-        font-size: 45px
+        font-size: 30px
         color: #4f7afe
-        gap: 30px
+        row-gap: 30px
         @media (max-width: 415px)
             font-size: 26px
-        .icon
-            margin-left: 110px
+            place-items: center
+        .titles
+            font-size: 30px
             @media (max-width: 415px)
-                margin-left: 70px
+                font-size: 26px
+            .mark
+                color: #EED96E
+
+        .icon
+            margin-left: 90px
+            @media (max-width: 415px)
+                margin-left: 1px
                 font-size: 30px
