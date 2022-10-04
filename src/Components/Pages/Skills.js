@@ -5,7 +5,7 @@ import { skills, tools } from "../../Data/Datas";
 function Skills() {
 
   return (
-    <motion.div className="main-skills">
+    <motion.div className="main-skills" id="skills">
       <motion.div className="languages">
         <div className="title">Languages I speak</div>
         {skills.map((item) => (

@@ -2,20 +2,20 @@
 @import "../../Sass/Variables/Variables"
 
 .main-skills
-
     display: grid
     height: 100%
+    margin: 0px 120px
     grid-row-gap: 30px
     grid-template-columns: 1fr
     grid-template-rows: 2fr 1.4fr 0.2fr
+    justify-content: center
     @media (max-width: 415px)
         grid-template-columns: 370px
     .languages
         display: grid
-        gap: 5px
         .title
-            margin-left: 35%
             margin-top: 8px
+            justify-self: center
             display: grid
             background: $bk
             place-content: center
@@ -28,7 +28,7 @@
                 font-size: 18px
                 height: 25px
                 width: 180px
-                margin-left: 25%
+
         .icons
             display: grid
             width: 150px

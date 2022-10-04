@@ -1,5 +1,4 @@
 .App {
-  margin: 20px;
-  padding: 0px;
-}
-/*# sourceMappingURL=App.css.map */
+  display: grid;
+  row-gap: 100px;
+}/*# sourceMappingURL=App.css.map */

@@ -8,10 +8,9 @@ import '../../Styles/Projects/Projects.css'
 function Portfolio() {
 
   return (
-    <motion.div className="main-container">
+    <motion.div className="main-container" id="work">
       <motion.div className="title">My projects</motion.div>
       <motion.div className="content-work">
-        Comming soon!
         <BsEmojiSmileUpsideDown className="icon" />
         <div className="titles">Experience:   <span className="mark">1 year</span></div>
         <div className="titles">Studied at:   <span className="mark">itpark_osh</span></div>

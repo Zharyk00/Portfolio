@@ -2,150 +2,117 @@
 @import "../../Sass/Variables/Variables"
 
 .main-nav
-    display: grid
     width: 100%
-    grid-template-columns: 20% 70%
-    grid-template-rows: repeat( auto-fill, minmax(560px , 1fr) )
-    column-gap: 20px
-    background: $bk
+    height: 80px
+    margin-top: 10px
+    background: rgb(28,28,30 ,9)
+    backdrop-filter: blur(15px)
+    z-index: 1
+    position: fixed
+    justify-content: center
     @media (max-width: 415px)
+        left: 60px
         display: grid
         justify-content: center
         grid-template-columns: 380px
-        grid-template-rows: 70px 550px
-        row-gap: 30px
+        grid-template-rows: 80px
 
     .links
         display: grid
-        background: $bk
-        justify-content: center
-        align-content: center
-        align-items: center
-        justify-items: center
-        grid-auto-flow: row
-        gap: 36px 0px
-
+        margin: 0px 120px
+        height: 100%
+        grid-template-columns: 1.5fr 1.2fr
+        background: rgb(28,28,30 ,0)
+        backdrop-filter: blur(15px)
+        grid-auto-flow: column
         @include shadow($shadow  , $transition , 10px )
         @media (max-width: 960px)
             display: grid
             grid-auto-flow: row
-            justify-items: center
+            column-gap: 20px
         @media (max-width: 415px)
+            display: grid
+            margin-right: 90px
+            margin-left: -40px
+            grid-template-columns: 1fr 2.5fr
+        .img_container
             display: grid
             grid-auto-flow: column
-            gap: 0px 5px
-            justify-content: space-evenly
-        .effect
-            position: absolute
-            height: 150px
-            width: 150px
-            border-radius: 134px
-            background-color: $bk
-            top: 63px
-            box-shadow: $activeshadow
-            @media (max-width: 960px)
-                display: grid
-                height: 125px
-                width: 125px
-                top: 86px
-                box-shadow: $activeshadow
+            align-items: center
+            justify-content: start
+            column-gap: 30px
+            padding-left: 40px
             @media (max-width: 415px)
-                height: 0px
-                width: 0px
-                top: 28px
-                left: 45px
-        .about-me
-            z-index: 1
-            width: 100%
-            height: 200px
-            display: grid
-            justify-items: center
-            margin-top: 8px
-
-            row-gap: 5px
-            @media (max-width: 960px)
                 display: grid
-                justify-items: center
-                width: 140px
-                height: 150px
-                row-gap: 10px
-                margin: 0px
-
-            @media (max-width: 415px)
-                width: 80px
-                height: 50px
+                column-gap: 10px
+            .effect
                 display: grid
-                row-gap: 3px
-                grid-auto-flow: row
-            .avatar
-                background-image: url('../../Pictures/real.jpg')
-                border-radius: 50%
-                background-size: cover
-                background-position: center
-                background-repeat: no-repeat
-                height: 130px
-                width: 130px
+                place-content: center
+                height: 70px
+                width: 70px
+                border-radius: 134px
+                background-color: #EED96E
                 box-shadow: $activeshadow
-                @include shadow($shadow  , $transition , 134px )
                 @media (max-width: 960px)
-                    height: 110px
-                    width: 110px
+                    display: grid
+                    height: 70px
+                    width: 70px
+                    box-shadow: $activeshadow
                 @media (max-width: 415px)
-                    height: 40px
-                    width: 40px
-            .name
+                    height: 46px
+                    width: 46px
+
+                .avatar
+                    background-image: url('../../Pictures/real.jpg')
+                    border-radius: 50%
+                    background-size: cover
+                    background-position: center
+                    background-repeat: no-repeat
+                    height: 62px
+                    width: 62px
+                    box-shadow: $activeshadow
+                    @include shadow($shadow  , $transition , 134px )
+                    @media (max-width: 960px)
+                        height: 110px
+                        width: 110px
+                    @media (max-width: 415px)
+                        height: 40px
+                        width: 40px
+            .stack
+                color: white
+                font-size: 14px
+        .shadow
+            display: grid
+            grid-auto-flow: column
+            align-items: center
+
+            a
                 display: grid
-                align-items: center
-                justify-items: center
-                height: 45px
-                width: 180px
-                background: $bk
-                box-shadow: $activeshadow
-                font-family: 'Roboto', sans-serif
-                color: #ffffff
+                place-content: center
+                color: white
+                display: grid
+                place-content: center
+                cursor: pointer
+                @include shadow($shadow  , $transition , 10% )
+                width: 80px
+                height: 35px
                 @media (max-width: 960px)
-                    height: 35px
-                    width: 135px
-                    font-size: 13px
+                    width: 120px
                 @media (max-width: 415px)
                     display: grid
-                    place-items: center
-                    height: 10px
-                    padding: 2px
-                    width: 80px
-                    font-size: 8px
+                    place-content: center
+                    @include shadow($shadow  , $transition , 134px )
+                    width: 30px
+                    height: 30px
 
-        a
-            display: grid
-            place-content: center
-            @include shadow($shadow  , $transition , 27px )
-            width: 180px
-            height: 30px
-            @media (max-width: 960px)
-                width: 120px
-            @media (max-width: 415px)
-                display: grid
-                place-content: center
-                @include shadow($shadow  , $transition , 134px )
-                width: 40px
-                height: 40px
+                .icons
+                    display: grid
+                    place-content: center
+                    font-size: 26px
+                    color: #4f7afe
+                    @media (max-width: 415px)
+                        font-size: 18px
 
-            .icons
-                display: grid
-                place-content: center
-                font-size: 26px
-                color: #4f7afe
-                @media (max-width: 415px)
-                    font-size: 18px
-
-        a.active
-            box-shadow: $activeshadow
-            background: $bk
-    .content
-        display: grid
-        @include shadow($shadow  , $transition , 10px )
-        padding: 30px
-        @media (max-width: 415px)
-            padding: 6px
-            display: grid
-            justify-content: center
+            a.active
+                box-shadow: $activeshadow
+                background: $bk

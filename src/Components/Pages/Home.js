@@ -52,7 +52,7 @@ function Home() {
 
   return (
     <motion.div
-      className="main-page">
+      className="main-page" id="hello">
       <div
         className="greet-container">
         <motion.div className="greet">
@@ -68,7 +68,7 @@ function Home() {
             className="first"
             style={{ color: "white" }}
             whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
-            onHoverStart={() => setWho("Web")}
+            onHoverStart={() => setWho("Full Stack")}
             onHoverEnd={() => setWho("I am")}>
             {who}
           </motion.h1>

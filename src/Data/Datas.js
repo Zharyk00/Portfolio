@@ -6,7 +6,7 @@ import { FaReact } from "react-icons/fa"
 
 
 export const menu = [
-  { id: 1, path: "/hello", links: <AiOutlineHome />, delay: 1.4 },
+  { id: 1, path: "hello", links: <AiOutlineHome />, delay: 1.4 },
   { id: 2, path: "about", links: <BsPerson />, delay: 1.2 },
   { id: 3, path: "skills", links: <BsBraces />, delay: 1 },
   { id: 4, path: "work", links: <MdWorkOutline />, delay: 0.8 },
@@ -51,13 +51,3 @@ export const projects = [
   { id: 4, path: "https://www.coronavirus.vic.gov.au/get-pcr-test-covid-19", name: "Show" },
   { id: 5, path: "https://www.zoho.com/sites/", name: "Show" },
 ]
-
-
-
-
-
-
-{/* <motion.div className="quotes" initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1.2, transition: { duration: 1 } }}>
-<motion.h1>Everyone should know how to program <br /> a computer , because it teaches you<br /> how to think!
-</motion.h1> <motion.h2 className="avtor" initial={{ x: -200, opacity: 0 }} animate={{ opacity: 1, x: 0, transition: { duration: 1, delay: 1 } }}>Steve Jobs</motion.h2>
-</motion.div> */}

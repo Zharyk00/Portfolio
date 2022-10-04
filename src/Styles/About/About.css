@@ -1,72 +1,55 @@
 .main-about {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 2fr 1fr;
-      grid-template-rows: 2fr 1fr;
+  margin: 0px 120px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   row-gap: 10px;
   padding-left: 10px;
 }
-
 @media (max-width: 415px) {
   .main-about {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 3fr 1fr 1fr;
-        grid-template-rows: 3fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
   }
 }
-
 .main-about .text {
-  display: -ms-grid;
   display: grid;
   color: white;
   width: 95%;
-  font-family: 'Charis SIL', serif;
+  font-family: "Charis SIL", serif;
   font-size: 24px;
   letter-spacing: 3px;
   gap: 40px;
 }
-
 @media (max-width: 415px) {
   .main-about .text {
     font-size: 20px;
   }
 }
-
 .main-about .text .me {
   text-align: center;
   color: #4f7afe;
   font-size: 25px;
 }
-
 @media (max-width: 415px) {
   .main-about .text .me {
     font-size: 22px;
   }
 }
-
 .main-about .text .text-about .emphasize {
   color: #EED96E;
 }
-
 .main-about .level {
-  display: -ms-grid;
   display: grid;
   height: 50px;
   width: 400px;
   font-size: 24px;
   place-content: center;
-  -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
-          box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+  box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
   color: #EED96E;
 }
-
 @media (max-width: 415px) {
   .main-about .level {
     font-size: 20px;
@@ -74,54 +57,36 @@
     margin-bottom: 20px;
   }
 }
-
 .main-about .social-media {
-  display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: space-around;
+  align-content: center;
   height: 70px;
   width: 60%;
-  -webkit-box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
-          box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+  box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
   background: #1C1C1E;
 }
-
 @media (max-width: 415px) {
   .main-about .social-media {
     width: 300px;
   }
 }
-
 .main-about .social-media .social-icons {
-  display: -ms-grid;
   display: grid;
   font-size: 30px;
   place-content: center;
   background: #1C1C1E;
   height: 50px;
 }
-
 .main-about .social-media .social-icons a {
-  display: -ms-grid;
   display: grid;
   height: 50px;
   width: 50px;
   background: #1C1C1E;
-  -webkit-box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
-          box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
-  -webkit-transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
-  transition: -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
-  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81), -webkit-box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
   border-radius: 10px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*# sourceMappingURL=About.css.map */
+  align-content: center;
+  justify-content: center;
+}/*# sourceMappingURL=About.css.map */

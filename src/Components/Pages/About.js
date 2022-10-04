@@ -9,7 +9,7 @@ import { social } from "../../Data/Datas";
 
 function About() {
   return (
-    <motion.div className="main-about">
+    <motion.div className="main-about" id="about">
       <motion.div className="text">
         <motion.div className="me">Who am I?</motion.div>
         <div className="text-about">
