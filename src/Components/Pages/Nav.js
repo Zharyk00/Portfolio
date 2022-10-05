@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import "../../Styles/Nav/Nav.css";
 import { motion } from "framer-motion";
-// import { NavLink, Outlet } from "react-router-dom";
 import { Link as NavLink } from "react-scroll";
 import { menu } from "../../Data/Datas";
 
