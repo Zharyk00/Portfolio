@@ -3,30 +3,32 @@
 .main-container
     display: grid
     grid-template-rows: 50px 1fr
-    grid-template-columns: 1fr
-    place-items: center
 
     .title
         padding-right: 45px
         color: #4f7afe
         font-size: 30px
-    .content-work
+    .container
         display: grid
-        font-size: 30px
-        color: #4f7afe
-        row-gap: 30px
-        @media (max-width: 415px)
-            font-size: 26px
-            place-items: center
-        .titles
-            font-size: 30px
-            @media (max-width: 415px)
-                font-size: 26px
-            .mark
-                color: #EED96E
+        justify-items: center
+        grid-template-columns: repeat(auto-fit , minmax(350px , 1fr))
+        gap: 40px
+        padding: 20px
 
-        .icon
-            margin-left: 90px
-            @media (max-width: 415px)
-                margin-left: 1px
-                font-size: 30px
+        .block
+            display: grid
+            place-items: center
+            @include shadow($shadow  , $transition , 10px )
+            height: 300px
+            width: 270px
+            @media (max-width: 415px )
+
+            img
+                border-radius: 10px
+                height: 260px
+                width: 250px
+            .name
+                color: #EED96E
+            a
+                cursor: pointer
+                text-decoration-color: #EED96E

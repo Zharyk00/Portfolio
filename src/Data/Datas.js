@@ -47,11 +47,6 @@ export const Others = [
   { id: 2, skill: 'Docker', icon: <FaDocker />, color: '#00B2E2' },
   { id: 3, skill: 'Typescript', icon: <SiTypescript />, color: '#0074C2' },
 ]
-// { id: 7, languge: "Animation", },
-// { id: 8, languge: "Formik", },
-// { id: 9, languge: `EmailJs` },
-// { id: 10, languge: `More...` },
-//  { id: 0, languge: "Git", }
 export const social = [
   { id: 1, icon: <BsGithub />, color: "#ffffff", path: "https://github.com/Zharyk00" },
   { id: 2, icon: <BsTelegram />, color: "#0088cc", path: "https://t.me/Zharyk_dev" },
@@ -59,13 +54,10 @@ export const social = [
   { id: 4, icon: <BsWhatsapp />, color: "#24CC63", path: "https://wa.me/message/ZYKLVQFKHF3BA1" },
 ]
 
-
-
-
 export const projects = [
-  { id: 1, path: "https://www.siteground.com/", name: "Show" },
-  { id: 2, path: "http://amanatcity.kg/", name: "Show" },
-  { id: 3, path: "http://vg-stroy.com/", name: "Show" },
-  { id: 4, path: "https://www.coronavirus.vic.gov.au/get-pcr-test-covid-19", name: "Show" },
-  { id: 5, path: "https://www.zoho.com/sites/", name: "Show" },
+  { id: 1, path: "https://www.siteground.com/", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 2, path: "http://amanatcity.kg/", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 3, path: "http://vg-stroy.com/", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 4, path: "https://www.coronavirus.vic.gov.au/get-pcr-test-covid-19", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 5, path: "https://www.zoho.com/sites/", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
 ]

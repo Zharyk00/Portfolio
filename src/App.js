@@ -6,6 +6,7 @@ import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Skills from "./Components/Pages/Skills";
 import Portfolio from "./Components/Pages/Portfolio";
+import Footer from "./Components/Pages/Footer";
 export const userContext = React.createContext();
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Skills />
       <Portfolio />
+      <Footer />
     </motion.div >
   );
 }

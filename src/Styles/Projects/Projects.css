@@ -1,43 +1,38 @@
 .main-container {
   display: grid;
   grid-template-rows: 50px 1fr;
-  grid-template-columns: 1fr;
-  place-items: center;
 }
 .main-container .title {
   padding-right: 45px;
   color: #4f7afe;
   font-size: 30px;
 }
-.main-container .content-work {
+.main-container .container {
   display: grid;
-  font-size: 30px;
-  color: #4f7afe;
-  row-gap: 30px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 20px;
 }
-@media (max-width: 415px) {
-  .main-container .content-work {
-    font-size: 26px;
-    place-items: center;
-  }
+.main-container .container .block {
+  display: grid;
+  place-items: center;
+  box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 10px;
+  height: 300px;
+  width: 270px;
 }
-.main-container .content-work .titles {
-  font-size: 30px;
+.main-container .container .block img {
+  border-radius: 10px;
+  height: 260px;
+  width: 250px;
 }
-@media (max-width: 415px) {
-  .main-container .content-work .titles {
-    font-size: 26px;
-  }
-}
-.main-container .content-work .titles .mark {
+.main-container .container .block .name {
   color: #EED96E;
 }
-.main-container .content-work .icon {
-  margin-left: 90px;
-}
-@media (max-width: 415px) {
-  .main-container .content-work .icon {
-    margin-left: 1px;
-    font-size: 30px;
-  }
+.main-container .container .block a {
+  cursor: pointer;
+  -webkit-text-decoration-color: #EED96E;
+          text-decoration-color: #EED96E;
 }/*# sourceMappingURL=Projects.css.map */

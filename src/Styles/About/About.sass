@@ -3,36 +3,45 @@
 .main-about
     display: grid
     grid-template-columns: 1fr
-    grid-template-rows: 2fr 1fr
+    grid-template-rows: 1fr 200px
     justify-items: center
     align-items: center
     row-gap: 10px
     @media (max-width: 415px)
         display: grid
-        grid-template-rows: 3fr 1fr 1fr
+        grid-template-rows: 1fr 100px
 
-    .text
+    .block
         display: grid
-        color: white
-        width: 95%
-        font-family: 'Charis SIL', serif
-        font-size: 24px
-        letter-spacing: 3px
-        gap: 40px
+        grid-template-columns: repeat(auto-fit , minmax(400px , 1fr ))
+        justify-items: center
+        row-gap: 50px
         @media (max-width: 415px)
             font-size: 20px
-            width: 360px
+        img
+            height: 350px
+            width: 280px
+        .text
+            display: grid
+            place-items: center
+            row-gap: 20px
+            padding: 0px 20px
 
-        .me
-            text-align: center
-            color: #4f7afe
-            font-size: 25px
+            .me
+                text-align: center
+                color: #4f7afe
+                font-size: 25px
             @media (max-width: 415px)
                 font-size: 22px
-        .text-about
-
-            .emphasize
-                color: #EED96E
+            .text-about
+                color: white
+                font-family: 'Charis SIL', serif
+                font-size: 24px
+                letter-spacing: 3px
+                @media (max-width: 415px)
+                    font-size: 20px
+                .emphasize
+                    color: #EED96E
 
     .level
         display: grid
@@ -45,7 +54,6 @@
         @media (max-width: 415px)
             font-size: 20px
             width: 300px
-            margin-bottom: 20px
     .social-media
         display: grid
         grid-auto-flow: column

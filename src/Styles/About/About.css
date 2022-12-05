@@ -1,7 +1,7 @@
 .main-about {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 200px;
   justify-items: center;
   align-items: center;
   row-gap: 10px;
@@ -9,35 +9,52 @@
 @media (max-width: 415px) {
   .main-about {
     display: grid;
-    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 100px;
   }
 }
-.main-about .text {
+.main-about .block {
   display: grid;
-  color: white;
-  width: 95%;
-  font-family: "Charis SIL", serif;
-  font-size: 24px;
-  letter-spacing: 3px;
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  row-gap: 50px;
 }
 @media (max-width: 415px) {
-  .main-about .text {
+  .main-about .block {
     font-size: 20px;
-    width: 360px;
   }
 }
-.main-about .text .me {
+.main-about .block img {
+  height: 350px;
+  width: 280px;
+}
+.main-about .block .text {
+  display: grid;
+  place-items: center;
+  row-gap: 20px;
+  padding: 0px 20px;
+}
+.main-about .block .text .me {
   text-align: center;
   color: #4f7afe;
   font-size: 25px;
 }
 @media (max-width: 415px) {
-  .main-about .text .me {
+  .main-about .block .text {
     font-size: 22px;
   }
 }
-.main-about .text .text-about .emphasize {
+.main-about .block .text .text-about {
+  color: white;
+  font-family: "Charis SIL", serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+@media (max-width: 415px) {
+  .main-about .block .text .text-about {
+    font-size: 20px;
+  }
+}
+.main-about .block .text .text-about .emphasize {
   color: #EED96E;
 }
 .main-about .level {
@@ -53,7 +70,6 @@
   .main-about .level {
     font-size: 20px;
     width: 300px;
-    margin-bottom: 20px;
   }
 }
 .main-about .social-media {

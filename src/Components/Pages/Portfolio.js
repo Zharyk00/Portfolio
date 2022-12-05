@@ -2,20 +2,24 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsEmojiSmileUpsideDown } from "react-icons/bs"
 import '../../Styles/Projects/Projects.css'
+import { projects } from '../../Data/Datas'
 
 
 
 function Portfolio() {
 
   return (
-    <motion.div className="main-container" id="work">
-      <motion.div className="title">My projects</motion.div>
-      <motion.div className="content-work">
-        <BsEmojiSmileUpsideDown className="icon" />
-        <div className="titles">Experience:   <span className="mark">1 year</span></div>
-        <div className="titles">Studied at:   <span className="mark">itpark_osh</span></div>
-      </motion.div>
-    </motion.div>
+    <div className="main-container" id="work">
+      <div className="title">My projects</div>
+      <article className="container">
+        {projects.map(links => (
+          <main className="block" key={links.id}>
+            <img src={links.image} />
+            <a href={links.path}><p className="name">{links.name}</p></a>
+          </main>
+        ))}
+      </article>
+    </div>
   );
 }
 
