@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAAG;;AAEf,AAAA,IAAI,CAAC;EACH,UAAU,ECLP,OAAO;CDKQ",
-    "sources": [
-        "index.sass",
-        "Sass/Variables/Variables.sass",
-        "Sass/Mixins/Mixins.sass"
-    ],
-    "names": [],
-    "file": "index.css"
-}
+{"version":3,"sources":["index.sass","index.css","../../Sass/Variables/Variables.sass"],"names":[],"mappings":"AAGA;EACE,SAAA;EACA,UAAA;ACFF;;ADIA;EACE,mBENG;ADKL","file":"index.css"}

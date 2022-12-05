@@ -1,131 +1,102 @@
+.title {
+  display: grid;
+  place-content: center;
+  color: #4f7afe;
+  font-size: 22px;
+}
+
 .main-skills {
   display: grid;
   height: 100%;
-  margin: 0px 120px;
-  grid-row-gap: 30px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1.4fr 0.2fr;
-  justify-content: center;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
-@media (max-width: 415px) {
-  .main-skills {
-    grid-template-columns: 370px;
-  }
-}
-.main-skills .languages {
+.main-skills .front {
   display: grid;
-}
-.main-skills .languages .title {
-  margin-top: 8px;
-  justify-self: center;
-  display: grid;
-  background: #1C1C1E;
-  place-content: center;
-  font-size: 22px;
-  height: 40px;
-  width: 200px;
-  box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
-  color: #4f7afe;
-}
-@media (max-width: 415px) {
-  .main-skills .languages .title {
-    font-size: 18px;
-    height: 25px;
-    width: 180px;
-  }
-}
-.main-skills .languages .icons {
-  display: grid;
-  width: 150px;
-  align-items: end;
-  justify-items: center;
-  align-self: end;
-  font-size: 25px;
-}
-@media (max-width: 415px) {
-  .main-skills .languages .icons {
-    width: 40px;
-    display: grid;
-    justify-items: end;
-    font-size: 20px;
-  }
-}
-.main-skills .languages .lines {
-  display: grid;
-  place-self: center;
-  height: 15px;
-  width: 80%;
-  border-radius: 27px;
-  box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
-}
-@media (max-width: 415px) {
-  .main-skills .languages .lines {
-    width: 90%;
-    height: 12px;
-  }
-}
-.main-skills .languages .lines .lines__color {
-  height: 100%;
-  border-radius: 27px;
-}
-.main-skills .tools {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  align-items: center;
-  row-gap: 10px;
-}
-@media (max-width: 415px) {
-  .main-skills .tools {
-    justify-content: center;
-    width: 100%;
-    justify-self: center;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.main-skills .tools .tools__items {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  height: 50px;
-  width: 120px;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  grid-template-rows: 120px 350px;
+  margin: 0px 30px;
+  padding: 0px 30px;
   box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
   transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 @media (max-width: 415px) {
-  .main-skills .tools .tools__items {
-    display: grid;
-    height: 30px;
-    width: 80px;
-    font-size: 11px;
+  .main-skills .front {
+    padding: 0px 15px;
   }
 }
-.main-skills .exper {
+.main-skills .front .front_block {
   display: grid;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
-  justify-content: start;
-  grid-auto-flow: column;
-  font-size: 22px;
-  padding-left: 20px;
-  color: white;
+}
+.main-skills .front .front_block .front_first_line {
+  display: grid;
+  width: 100%;
+  height: 12px;
+  box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+  border-radius: 10px;
+}
+.main-skills .front .front_block .front_first_line .front_second_line {
+  height: 100%;
+  border-radius: 10px;
+}
+.main-skills .front .skill_lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+}
+.main-skills .front .skill_lists .skills {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 60px;
+  width: 80px;
+  box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 10px;
+}
+.main-skills .back {
+  display: grid;
+  margin: 0px 30px;
+  grid-template-rows: 120px auto;
+  padding: 0px 30px;
+  padding-bottom: 20px;
+  box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 10px;
 }
 @media (max-width: 415px) {
-  .main-skills .exper {
-    font-size: 12px;
-    -moz-column-gap: 6px;
-         column-gap: 6px;
+  .main-skills .back {
+    padding: 0px 15px;
   }
 }
-.main-skills .exper .experienced {
-  color: #EED96E;
-  font-size: 22px;
+.main-skills .back .back_block {
+  display: grid;
 }
-@media (max-width: 415px) {
-  .main-skills .exper .experienced {
-    font-size: 12px;
-  }
+.main-skills .back .back_block .back_first_line {
+  display: grid;
+  width: 100%;
+  height: 12px;
+  box-shadow: 4px 4px 4px -3px #2d2d30, -4px -4px 3px -5px #0b0b0c, inset -4px -4px 3px -5px #2d2d30, inset 4px 4px 3px -1px #0b0b0c;
+  border-radius: 10px;
+}
+.main-skills .back .back_block .back_first_line .back_second_line {
+  height: 100%;
+  border-radius: 10px;
+}
+.main-skills .back .skill_lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  row-gap: 20px;
+  padding-bottom: 40px;
+}
+.main-skills .back .skill_lists .skills {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 60px;
+  width: 80px;
+  box-shadow: -7px -7px 10px -8px #2d2d30, -4px -4px 5px -7px #2d2d30, 7px 7px 10px -9px #0b0b0c, 4px 4px 5px -1px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c, inset 0px 0px 0px 0px #2d2d30, inset 0px 0px 0px 0px #0b0b0c;
+  transition: box-shadow 0.6 cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 10px;
 }/*# sourceMappingURL=Skills.css.map */

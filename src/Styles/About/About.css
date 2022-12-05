@@ -1,12 +1,10 @@
 .main-about {
   display: grid;
-  margin: 0px 120px;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
   justify-items: center;
   align-items: center;
   row-gap: 10px;
-  padding-left: 10px;
 }
 @media (max-width: 415px) {
   .main-about {
@@ -26,6 +24,7 @@
 @media (max-width: 415px) {
   .main-about .text {
     font-size: 20px;
+    width: 360px;
   }
 }
 .main-about .text .me {
@@ -69,7 +68,7 @@
 }
 @media (max-width: 415px) {
   .main-about .social-media {
-    width: 300px;
+    width: 360px;
   }
 }
 .main-about .social-media .social-icons {

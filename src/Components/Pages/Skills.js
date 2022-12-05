@@ -1,40 +1,76 @@
 import React, { Fragment } from "react";
 import { motion } from "framer-motion";
 import "../../Styles/Skills/Skills.css";
-import { skills, tools } from "../../Data/Datas";
+import { Back, Front, Others } from "../../Data/Datas";
+import { display } from "@mui/system";
 function Skills() {
 
   return (
-    <motion.div className="main-skills" id="skills">
-      <motion.div className="languages">
-        <div className="title">Languages I speak</div>
-        {skills.map((item) => (
-          <Fragment key={item.id} >
-            <div className="icons" style={{ color: item.color }}>{item.languge}</div>
-            <motion.div className="lines">
+    <Fragment>
+      <p id="skills" className="title">Languages I speak</p>
+      <div className="main-skills" id="skills">
+        <div className="front">
+          <article className="front_block">
+            <p style={{ display: 'grid', placeContent: 'center' }}>Front-end</p>
+            <div className="front_first_line">
               <motion.div
-                className="lines__color"
-                initial={{ width: item.initial }}
+                className="front_second_line"
+                initial={{ width: '3%' }}
                 animate={{
-                  width: item.percent, backgroundColor: item.color,
-                  transition: { type: "tween", duration: 2, ease: "easeOut", delay: item.id, }
-                }}
-              ></motion.div>
-            </motion.div>
-          </Fragment>
-        ))}
-      </motion.div>
-      <motion.div className="tools">
-        {tools.map(item => (
-          <motion.div key={item.id} className="tools__items">
-            <span style={{ color: "#4f7afe" }}>{item.languge}</span>
-          </motion.div>
-        ))}
-      </motion.div>
-      <div className="exper">Experienced with: <span className="experienced">Nodejs,</span>
-        <span className="experienced">Expressjs,</span>
-        <span className="experienced">MongoDB</span></div>
-    </motion.div>
+                  width: '65%', backgroundColor: '#D84924',
+                  transition: { type: "tween", duration: 2, ease: "easeOut", delay: 0.1 }
+                }}>
+              </motion.div></div>
+          </article>
+          <article className="skill_lists">
+            {Front.map(front => (
+              <section className="skills">
+                <div style={{ fontSize: '25px', color: front.color }}>{front.icon}</div>
+                <p style={{ color: '#DBB287' }}>{front.skill}</p>
+              </section>
+            ))}
+          </article>
+
+        </div>
+
+        <div className="back">
+          <article className="back_block">
+            <p style={{ display: 'grid', placeContent: 'center' }}>Back-End</p>
+            <div className="back_first_line">
+              <motion.div
+                className="back_second_line"
+                initial={{ width: '3%' }}
+                animate={{
+                  width: '40%', backgroundColor: '#D84924',
+                  transition: { type: "tween", duration: 2, ease: "easeOut", delay: 0.1 }
+                }}>
+              </motion.div></div>
+          </article>
+          <article className="skill_lists">
+            {Back.map(front => (
+              <section className="skills">
+                <div style={{ fontSize: '25px', color: front.color }}>{front.icon}</div>
+                <p style={{ color: '#DBB287' }}>{front.skill}</p>
+              </section>
+            ))}
+          </article><br />
+
+
+          <p style={{ display: 'grid', placeContent: 'center', height: '40px' }}>Ohters</p>
+          <article className="skill_lists">
+            {Others.map(front => (
+              <section className="skills">
+                <div style={{ fontSize: '25px', color: front.color }}>{front.icon}</div>
+                <p style={{ color: '#DBB287' }}>{front.skill}</p>
+              </section>
+            ))}
+          </article>
+
+        </div>
+
+
+      </div>
+    </Fragment>
   );
 }
 
@@ -43,3 +79,11 @@ export default Skills;
 
 
 
+{/* <motion.div
+                className="lines__color"
+                initial={{ width: item.initial }}
+                animate={{
+                  width: item.percent, backgroundColor: item.color,
+                  transition: { type: "tween", duration: 2, ease: "easeOut", delay: item.id, }
+                }}
+              ></motion.div> */}

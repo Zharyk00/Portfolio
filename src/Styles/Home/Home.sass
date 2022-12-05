@@ -2,64 +2,35 @@
 @import "../../Sass/Mixins/Mixins"
 .main-page
     display: grid
-    margin: 0px 120px
-    grid-template-columns: 1fr , 1fr
-    grid-auto-flow: column
+    grid-template-columns: repeat(auto-fit , minmax(350px , 1fr))
     place-items: center
-    padding-top: 120px
+    padding-top: 150px
     @media (max-width: 415px)
-        display: grid
-        place-content: center
-        grid-template-columns: 380px
-        grid-template-rows: 80px , 420px
-        grid-auto-flow: row
         row-gap: 30px
-    .greet-container
+        padding-top: 120px
+
+    .greet
         display: grid
-        .greet
+        height: 450px
+        width: 400px
+        place-content: center
+        row-gap: 35px
+        @include shadow($shadow , $transition  , 27px )
+        @media (max-width: 415px)
+            grid-auto-flow: column
+            justify-content: space-evenly
+            height: 80px
+            width: 360px
+            @include shadow($shadow , $transition  , 5px )
+
+        h1
             display: grid
-            height: 450px
-            width: 400px
-            grid-auto-flow: row
-            justify-content: center
-            align-content: center
-            gap: 35px 0px
-            @include shadow($shadow , $transition  , 27px )
-            @media (max-width: 1120px)
-                height: 380px
-                width: 280px
-            @media (max-width: 960px)
-                height: 300px
-                width: 230px
-            @media (max-width: 800px)
-                height: 300px
-                width: 200px
+            place-content: center
+            font-size: 70px
+            height: 70px
+            padding: 5px
             @media (max-width: 415px)
-                display: grid
-                grid-auto-flow: column
-                justify-content: space-evenly
-                align-items: center
-                height: 80px
-                width: 320px
-                @include shadow($shadow , $transition  , 5px )
-
-            h1
-                display: grid
-                justify-content: center
-                font-size: 70px
-                height: 70px
-                padding: 5px
-
-                @media (max-width: 1120pxpx)
-                    font-size: 60px
-                @media (max-width: 960px)
-                    font-size: 50px
-                    height: 40px
-                @media (max-width: 415px)
-                    display: grid
-                    align-content: center
-                    font-size: 22px
-                    display: grid
+                font-size: 22px
 
     .container
         display: grid
@@ -72,23 +43,12 @@
             height: 450px
             width: 400px
             @include shadow($shadow , $transition  , 27px )
-            justify-content: center
-            align-content: center
-            grid-auto-flow: row
+            place-content: center
             background: $bk
             row-gap: 15px
-            @media (max-width: 1120px)
-                height: 380px
-                width: 280px
-            @media (max-width: 960px)
-                height: 300px
-                width: 230px
-            @media (max-width: 800px)
-                height: 300px
-                width: 200px
             @media (max-width: 415px)
                 height: 400px
-                width: 320px
+                width: 360px
                 @include shadow($shadow , $transition  , 5px )
 
             .title
@@ -120,8 +80,6 @@
                     height: 40px
                     width: 300px
                     background: none
-                    @media (max-width: 960px)
-                        width: 150px
                     @media (max-width: 415px)
                         width: 220px
                         box-shadow: $activeshadow
@@ -140,8 +98,6 @@
                     width: 300px
                     box-shadow: $activeshadow
                     resize: none
-                    @media (max-width: 960px)
-                        width: 150px
                     @media (max-width: 415px)
                         width: 220px
                         box-shadow: $activeshadow
@@ -159,8 +115,6 @@
                 width: 200px
                 @include shadow($shadow , $transition  , 27px )
                 background: $bk
-                @media (max-width: 960px)
-                    width: 150px
                 @media (max-width: 415px)
                     width: 220px
                 &:active

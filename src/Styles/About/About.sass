@@ -2,13 +2,11 @@
 @import "../../Sass/Variables/Variables"
 .main-about
     display: grid
-    margin: 0px 120px
     grid-template-columns: 1fr
     grid-template-rows: 2fr 1fr
     justify-items: center
     align-items: center
     row-gap: 10px
-    padding-left: 10px
     @media (max-width: 415px)
         display: grid
         grid-template-rows: 3fr 1fr 1fr
@@ -23,6 +21,7 @@
         gap: 40px
         @media (max-width: 415px)
             font-size: 20px
+            width: 360px
 
         .me
             text-align: center
@@ -57,7 +56,7 @@
         box-shadow: $activeshadow
         background: $bk
         @media (max-width: 415px)
-            width: 300px
+            width: 360px
         .social-icons
             display: grid
             font-size: 30px

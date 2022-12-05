@@ -1,101 +1,78 @@
 @import "../../Sass/Mixins/Mixins"
 @import "../../Sass/Variables/Variables"
 
+.title
+    display: grid
+    place-content: center
+    color: #4f7afe
+    font-size: 22px
 .main-skills
     display: grid
     height: 100%
-    margin: 0px 120px
-    grid-row-gap: 30px
-    grid-template-columns: 1fr
-    grid-template-rows: 2fr 1.4fr 0.2fr
-    justify-content: center
-    @media (max-width: 415px)
-        grid-template-columns: 370px
-    .languages
+    grid-gap: 50px
+    grid-template-columns: repeat(auto-fit , minmax(400px , 1fr))
+
+    .front
         display: grid
-        .title
-            margin-top: 8px
-            justify-self: center
+        grid-template-rows: 120px 350px
+        margin: 0px 30px
+        padding: 0px 30px
+        @include shadow($shadow  , $transition , 10px )
+        @media (max-width: 415px)
+            padding: 0px 15px
+        .front_block
             display: grid
-            background: $bk
-            place-content: center
-            font-size: 22px
-            height: 40px
-            width: 200px
-            box-shadow: $activeshadow
-            color: #4f7afe
-            @media (max-width: 415px)
-                font-size: 18px
-                height: 25px
-                width: 180px
-
-        .icons
-            display: grid
-            width: 150px
-            align-items: end
-            justify-items: center
-            align-self: end
-            font-size: 25px
-            @media (max-width: 415px)
-                width: 40px
+            .front_first_line
                 display: grid
-                justify-items: end
-                font-size: 20px
-
-        .lines
-            display: grid
-            place-self: center
-            height: 15px
-            width: 80%
-            border-radius: 27px
-            box-shadow: $activeshadow
-            @media (max-width: 415px)
-                width: 90%
+                width: 100%
                 height: 12px
-            .lines__color
-                height: 100%
-                border-radius: 27px
-
-    .tools
-        display: grid
-        grid-template-columns: repeat(5 , 1fr)
-        justify-items: center
-        align-items: center
-        row-gap: 10px
-        @media (max-width: 415px)
-            justify-content: center
-            width: 100%
-            justify-self: center
-            grid-template-columns: repeat(3 , 1fr)
-
-        .tools__items
+                box-shadow: $activeshadow
+                border-radius: 10px
+                .front_second_line
+                    height: 100%
+                    border-radius: 10px
+        .skill_lists
             display: grid
-            justify-content: center
-            align-content: center
-            height: 50px
-            width: 120px
-            font-size: 15px
-            font-family: 'Roboto', sans-serif
-            @include shadow($shadow, $transition , 20px )
-            @media (max-width: 415px)
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+            justify-items: center
+            .skills
                 display: grid
-                height: 30px
+                justify-items: center
+                align-content: center
+                height: 60px
                 width: 80px
-                font-size: 11px
-    .exper
-        display: grid
-        column-gap: 12px
-        justify-content: start
-        grid-auto-flow: column
-        font-size: 22px
-        padding-left: 20px
-        color: white
-        @media (max-width: 415px)
-            font-size: 12px
-            column-gap: 6px
-        .experienced
-            color: #EED96E
-            font-size: 22px
+                @include shadow($shadow  , $transition , 10px )
 
-            @media (max-width: 415px)
-                font-size: 12px
+    .back
+        display: grid
+        margin: 0px 30px
+        grid-template-rows: 120px auto
+        padding: 0px 30px
+        padding-bottom: 20px
+        @include shadow($shadow  , $transition , 10px )
+        @media (max-width: 415px)
+            padding: 0px 15px
+        .back_block
+            display: grid
+            .back_first_line
+                display: grid
+                width: 100%
+                height: 12px
+                box-shadow: $activeshadow
+                border-radius: 10px
+                .back_second_line
+                    height: 100%
+                    border-radius: 10px
+        .skill_lists
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+            justify-items: center
+            row-gap: 20px
+            padding-bottom: 40px
+            .skills
+                display: grid
+                justify-items: center
+                align-content: center
+                height: 60px
+                width: 80px
+                @include shadow($shadow  , $transition , 10px )

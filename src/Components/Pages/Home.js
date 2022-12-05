@@ -52,36 +52,34 @@ function Home() {
 
   return (
     <motion.div
-      className="main-page" id="hello">
-      <div
-        className="greet-container">
-        <motion.div className="greet">
-          <motion.h1
-            className="first"
-            style={{ color: "#4f7afe" }}
-            whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
-            onHoverStart={() => setGreet("World")}
-            onHoverEnd={() => setGreet("Hello")}>
-            {greet}
-          </motion.h1>
-          <motion.h1
-            className="first"
-            style={{ color: "white" }}
-            whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
-            onHoverStart={() => setWho("Full Stack")}
-            onHoverEnd={() => setWho("I am")}>
-            {who}
-          </motion.h1>
-          <motion.h1
-            className="first"
-            style={{ color: "white" }}
-            whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
-            onHoverStart={() => setName("Developer")}
-            onHoverEnd={() => setName("Zharyk")} >
-            {name}
-          </motion.h1>
-        </motion.div>
-      </div>
+      className="main-page" id="hey">
+      <motion.div className="greet">
+        <motion.h1
+          className="first"
+          style={{ color: "#4f7afe" }}
+          whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
+          onHoverStart={() => setGreet("World")}
+          onHoverEnd={() => setGreet("Hello")}>
+          {greet}
+        </motion.h1>
+        <motion.h1
+          className="first"
+          style={{ color: "white" }}
+          whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
+          onHoverStart={() => setWho("Full Stack")}
+          onHoverEnd={() => setWho("I am")}>
+          {who}
+        </motion.h1>
+        <motion.h1
+          className="first"
+          style={{ color: "white" }}
+          whileHover={{ x: 20, transition: { type: "spring", stiffness: 150 }, }}
+          onHoverStart={() => setName("Developer")}
+          onHoverEnd={() => setName("Zharyk")} >
+          {name}
+        </motion.h1>
+      </motion.div>
+
 
       <Formik
         initialValues={initialValues}
