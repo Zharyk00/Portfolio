@@ -1,10 +1,10 @@
 footer {
-  height: 300px;
+  height: 100px;
   width: 100%;
 }
 footer .container {
   display: grid;
   height: 100%;
-  place-content: center;
-  color: #EED96E;
+  place-items: center;
+  color: #4f7afe;
 }/*# sourceMappingURL=Footer.css.map */

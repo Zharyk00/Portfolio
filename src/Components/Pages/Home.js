@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
-import { Button, Snackbar, Slide } from '@mui/material'
+import { Button, Snackbar } from '@mui/material'
 import { motion } from "framer-motion";
-import { Formik, Form, Field, ErrorMessage, useFormik } from "formik"
+import { Formik, Form, Field, ErrorMessage } from "formik"
 import { BsFillPersonFill } from "react-icons/bs"
 import { SiGmail, SiGooglemessages } from "react-icons/si"
 import "../../Styles/Home/Home.css";
@@ -51,9 +51,9 @@ function Home() {
 
 
   return (
-    <motion.div
+    <div
       className="main-page" id="hey">
-      <motion.div className="greet">
+      <div className="greet">
         <motion.h1
           className="first"
           style={{ color: "#4f7afe" }}
@@ -78,7 +78,7 @@ function Home() {
           onHoverEnd={() => setName("Zharyk")} >
           {name}
         </motion.h1>
-      </motion.div>
+      </div>
 
 
       <Formik
@@ -119,9 +119,7 @@ function Home() {
 
         )}
       </Formik>
-
-
-    </motion.div >
+    </div >
   );
 }
 

@@ -1,13 +1,16 @@
 import React from 'react'
 import '../../Styles/Footer/Footer.css'
+import { DiCodeigniter } from 'react-icons/di'
 
 function Footer() {
     return (
         <footer>
             <hr />
             <main className='container'>
-                <p>hello world i am  back</p>
+                <DiCodeigniter size={30} color={'#4f7afe'} />
+                <p>coding , coding and coding...</p>
             </main>
+            <hr />
         </footer>
     )
 }

@@ -55,9 +55,9 @@ export const social = [
 ]
 
 export const projects = [
-  { id: 1, path: "https://www.siteground.com/", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
-  { id: 2, path: "http://amanatcity.kg/", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
-  { id: 3, path: "http://vg-stroy.com/", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
-  { id: 4, path: "https://www.coronavirus.vic.gov.au/get-pcr-test-covid-19", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
-  { id: 5, path: "https://www.zoho.com/sites/", name: "Show", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 1, path: "https://www.siteground.com/", name: "Portfolio", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 2, path: "http://amanatcity.kg/", name: "Search bar", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 3, path: "http://vg-stroy.com/", name: "bil.kg", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 4, path: "https://www.coronavirus.vic.gov.au/get-pcr-test-covid-19", name: "Portfolio site", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 5, path: "https://www.zoho.com/sites/", name: "table", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
 ]

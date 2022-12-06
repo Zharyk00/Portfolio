@@ -1,8 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "../../Styles/Nav/Nav.css";
 import { motion } from "framer-motion";
 import { Link as NavLink } from "react-scroll";
 import { menu } from "../../Data/Datas";
+import { DiCodeigniter } from 'react-icons/di'
 
 function Nav() {
 
@@ -12,7 +13,7 @@ function Nav() {
 
     <motion.div className="main-nav">
       <header>
-        Full Stack Developer
+        <DiCodeigniter />
       </header>
       <div className="shadow">
         {menu.map((items) => {

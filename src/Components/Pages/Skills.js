@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { motion } from "framer-motion";
 import "../../Styles/Skills/Skills.css";
 import { Back, Front, Others } from "../../Data/Datas";
-import { display } from "@mui/system";
 function Skills() {
 
   return (
@@ -11,7 +10,7 @@ function Skills() {
       <div className="main-skills" id="skills">
         <div className="front">
           <article className="front_block">
-            <p style={{ display: 'grid', placeContent: 'center' }}>Front-end</p>
+            <p style={{ display: 'grid', placeContent: 'center', color: 'white' }}>Front-end</p>
             <div className="front_first_line">
               <motion.div
                 className="front_second_line"
@@ -35,7 +34,7 @@ function Skills() {
 
         <div className="back">
           <article className="back_block">
-            <p style={{ display: 'grid', placeContent: 'center' }}>Back-End</p>
+            <p style={{ display: 'grid', placeContent: 'center', color: 'white' }}>Back-End</p>
             <div className="back_first_line">
               <motion.div
                 className="back_second_line"
@@ -56,7 +55,7 @@ function Skills() {
           </article><br />
 
 
-          <p style={{ display: 'grid', placeContent: 'center', height: '40px' }}>Ohters</p>
+          <p style={{ display: 'grid', placeContent: 'center', height: '40px', color: 'white' }}>Ohters</p>
           <article className="skill_lists">
             {Others.map(front => (
               <section className="skills">
@@ -75,15 +74,3 @@ function Skills() {
 }
 
 export default Skills;
-
-
-
-
-{/* <motion.div
-                className="lines__color"
-                initial={{ width: item.initial }}
-                animate={{
-                  width: item.percent, backgroundColor: item.color,
-                  transition: { type: "tween", duration: 2, ease: "easeOut", delay: item.id, }
-                }}
-              ></motion.div> */}

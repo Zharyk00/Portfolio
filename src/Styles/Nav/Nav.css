@@ -21,11 +21,11 @@
   }
 }
 .main-nav header {
-  font-family: "Tangerine", serif;
+  font-family: "Sofia", sans-serif;
   display: grid;
   justify-content: center;
-  font-size: 48px;
-  color: white;
+  font-size: 40px;
+  color: #4f7afe;
 }
 @media (max-width: 415px) {
   .main-nav header {

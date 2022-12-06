@@ -3,9 +3,10 @@
   grid-template-rows: 50px 1fr;
 }
 .main-container .title {
-  padding-right: 45px;
   color: #4f7afe;
-  font-size: 30px;
+  font-size: 24px;
+  display: grid;
+  justify-items: center;
 }
 .main-container .container {
   display: grid;

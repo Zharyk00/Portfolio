@@ -1,6 +1,5 @@
 import React from "react";
 import "../../Styles/About/About.css"
-import { motion } from "framer-motion";
 import { social } from "../../Data/Datas";
 
 
@@ -11,7 +10,7 @@ function About() {
   return (
     <div className="main-about" id="about">
       <main className="block">
-        <img src="https://iphoneswallpapers.com/wp-content/uploads/2022/06/Do-Not-Disturb-I-am-Coding-iPhone-Wallpaper.jpg" />
+        <img src="https://iphoneswallpapers.com/wp-content/uploads/2022/06/Do-Not-Disturb-I-am-Coding-iPhone-Wallpaper.jpg" alt="wallpaper" />
         <div className="text">
           <article className="me">Who am I?</article>
           <section className="text-about">
@@ -23,9 +22,10 @@ function About() {
         </div>
       </main>
       <main className="social-media">
-        {social.map(items => <div key={items.id} className="social-icons"  ><a href={items.path} target="_blank" style={{ color: items.color }}>{items.icon}</a></div>)}
+        {social.map(items => <div key={items.id} className="social-icons"  ><a href={items.path} target="_blank" rel='noreferrer' style={{ color: items.color }}>{items.icon}</a></div>)}
       </main>
       <div className="level"><div>English :   Upper-intermediate</div></div>
+
     </div >
 
   );
