@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { BsEmojiSmileUpsideDown } from "react-icons/bs"
 import '../../Styles/Projects/Projects.css'
 import { projects } from '../../Data/Datas'
 
@@ -14,7 +12,7 @@ function Portfolio() {
       <article className="container">
         {projects.map(links => (
           <main className="block" key={links.id}>
-            <img src={links.image} />
+            <img src={links.image} alt='linkimg' />
             <a href={links.path}><p className="name">{links.name}</p></a>
           </main>
         ))}
