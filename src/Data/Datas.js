@@ -55,9 +55,9 @@ export const social = [
 ]
 
 export const projects = [
-  { id: 1, path: "https://www.siteground.com/", name: "Portfolio", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
-  { id: 2, path: "http://amanatcity.kg/", name: "Search bar", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
-  { id: 3, path: "http://vg-stroy.com/", name: "bil.kg", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
-  { id: 4, path: "https://www.coronavirus.vic.gov.au/get-pcr-test-covid-19", name: "Portfolio site", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
-  { id: 5, path: "https://www.zoho.com/sites/", name: "table", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 1, path: "https://github.com/Zharyk00/Portfolio", name: "Portfolio", image: 'https://mir-s3-cdn-cf.behance.net/projects/404/0f2bf1145234233.Y3JvcCwzODM1LDMwMDAsNjM2LDA.png' },
+  { id: 2, path: "https://github.com/Zharyk00/adminka", name: "Adminka (React-Admin)", image: 'https://blog.theodo.com/static/cb8ab6b78ccddc58ae27cc4aa94fe499/ee604/react-admin-logo.png' },
+  { id: 3, path: "https://www.coronavirus.vic.gov.au/get-pcr-test-covid-19", name: "Just nft images", image: 'https://blockbuild.africa/wp-content/uploads/2022/08/NFT-Utility.jpeg' },
+  { id: 4, path: "https://www.zoho.com/sites/", name: "table", image: 'https://www.whoa.in/download/mobile-wallpapers-hd-images-background-wallpapers-5-mobile-wallpaper' },
+  { id: 5, path: "https://kadyrbek00.github.io/new/", name: "Kadyrbek's portfolio", image: 'https://previews.123rf.com/images/kchung/kchung1610/kchung161001407/64508477-portfolio-written-by-hand-hand-writing-on-transparent-board-photo.jpg' },
 ]

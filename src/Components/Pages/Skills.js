@@ -55,7 +55,19 @@ function Skills() {
           </article><br />
 
 
-          <p style={{ display: 'grid', placeContent: 'center', height: '40px', color: 'white' }}>Ohters</p>
+          <article className="back_block">
+            <p style={{ display: 'grid', placeContent: 'center', color: 'white', marginBottom: '20px' }}>Others</p>
+            <div className="back_first_line" style={{ marginBottom: '20px' }}>
+              <motion.div
+
+                className="back_second_line"
+                initial={{ width: '3%' }}
+                animate={{
+                  width: '60%', backgroundColor: '#D84924',
+                  transition: { type: "tween", duration: 2, ease: "easeOut", delay: 0.1 }
+                }}>
+              </motion.div></div>
+          </article>
           <article className="skill_lists">
             {Others.map(front => (
               <section className="skills">

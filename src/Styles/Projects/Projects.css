@@ -26,6 +26,8 @@
 }
 .main-container .container .block img {
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 260px;
   width: 250px;
 }
