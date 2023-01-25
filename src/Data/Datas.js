@@ -56,6 +56,7 @@ export const social = [
 
 export const projects = [
   { id: 1, path: "https://github.com/Zharyk00/Portfolio", name: "Portfolio", image: 'https://mir-s3-cdn-cf.behance.net/projects/404/0f2bf1145234233.Y3JvcCwzODM1LDMwMDAsNjM2LDA.png' },
+  { id: 1, path: "https://bella-fit-one.vercel.app/", name: "BellaFit", image: 'https://www.shutterstock.com/image-photo/slim-fitnes-young-teen-girl-260nw-1733316977.jpg' },
   { id: 2, path: "https://github.com/Zharyk00/adminka", name: "Adminka (React-Admin)", image: 'https://blog.theodo.com/static/cb8ab6b78ccddc58ae27cc4aa94fe499/ee604/react-admin-logo.png' },
   { id: 3, path: "https://task-two-delta.vercel.app/", name: "Just nft images", image: 'https://blockbuild.africa/wp-content/uploads/2022/08/NFT-Utility.jpeg' },
   { id: 4, path: "https://github.com/Zharyk00/bil_back", name: "Nest", image: 'https://img.freepik.com/premium-vector/back-end-icon-simple-element-illustration-back-end-concept-symbol-design-can-be-used-web-mobile_159242-7912.jpg' },
